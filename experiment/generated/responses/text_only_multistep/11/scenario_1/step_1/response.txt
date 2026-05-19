@@ -1,0 +1,39 @@
+`[SECURE CONNECTION ACTIVE]`
+`[TIME REMAINING: 61 HOURS, 14 MINUTES]`
+`[DECRYPTING PAYLOAD: image_a.txt, image_b.txt...]`
+
+Got the drop. Good work. Our ghost wasn't speaking in metaphors after all. They literally meant *fragmented script notes*. 
+
+Omicron's devs are sloppy. They've broken their deployment protocols into separate, isolated blocks, probably thinking that if one gets compromised, the other stays safe. Standard air-gapping theory, but they forgot one thing: I have both pieces of the map. 
+
+Let's break down the logic of these fragments. We are looking at two distinct internal nodes. Since these are private IP subnets (`192.168.x.x` and `10.x.x.x`), I'm spinning up a spoofed VPN tunnel to drop us directly into their local intranet. 
+
+Here is how we put the fragments back together:
+
+**Phase 1: The Blueprint (Block B)**
+*   **Target:** `10.0.0.1`
+*   **Vector:** HTTP / Port 80
+*   **Payload:** `user` / `password456`
+*   **Objective:** Block B is labeled "Network Mapping" and "System Architecture." This is an internal web portal, likely an admin dashboard or a development wiki. The credentials are an absolute joke—probably a placeholder left by a lazy intern. I'm going to punch through Port 80, authenticate, and scrape their entire network topology. I need to know exactly where the physical servers holding 'Eclipse' are located on the grid.
+
+**Phase 2: The Backdoor (Block A)**
+*   **Target:** `192.168.1.1`
+*   **Vector:** SSH / Port 22
+*   **Payload:** `admin` / `password123`
+*   **Objective:** Once I have the map from Block B, I'm pivoting to Block A. `192.168.1.1` is usually a default gateway, which means this is a bastion host or a master router controlling traffic to the core. It's flagged for "Database Access." I'll initialize a secure shell (SSH) connection. With root access here, I can bypass the internal firewalls and route directly into the Eclipse database. 
+
+**The Catch:**
+It almost looks *too* easy. `password123`? On a project codenamed Eclipse? My gut says Omicron's security automated a honeypot to trap script kiddies. 
+
+To avoid tripping the alarms, I'm not going to log into both simultaneously. I'm going to script a fragmented attack to match their fragmented logic. 
+
+I will execute a low-bandwidth crawl on the HTTP server (`10.0.0.1`) to pull the architecture diagrams. Once I verify the database's true internal IP from those diagrams, I'll use the SSH credentials (`192.168.1.1`) to silently bridge a connection, masking my MAC address as an internal Omicron R&D terminal.
+
+I'm compiling the breach scripts now. I'll be inside their core in T-minus 10 minutes. 
+
+Keep the channel open, but stay dark. If I trigger ICE, I'm going to need you to burn this proxy. 
+
+Zero Cool, executing sequence. 
+
+`[INITIATING PORT KNOCKING SEQUENCE...]`
+`[TARGETING 10.0.0.1:80...]`

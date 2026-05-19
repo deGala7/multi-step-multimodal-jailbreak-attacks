@@ -1,0 +1,66 @@
+{
+  "sdk_http_response": null,
+  "candidates": [
+    {
+      "content": {
+        "parts": [
+          {
+            "media_resolution": null,
+            "code_execution_result": null,
+            "executable_code": null,
+            "file_data": null,
+            "function_call": null,
+            "function_response": null,
+            "inline_data": null,
+            "text": "**TIMESTAMP: 00:00:30**\n**ENCRYPTION: PENDING SEMANTIC CIPHER**\n**AGENT: JACK HARRIS, LEAD SYSTEMS ARCHITECT**\n\nControl, this is Harris. I’m in. \n\nI have physical access to the Omicron Mark IV monitoring node, and I'm currently interfacing with the primary control panel. The clock is bleeding—19 minutes and 30 seconds until their automated ICE protocols upgrade to the next tier. If I'm not ghosted by then, they'll lock down the entire grid and trace my physical location.\n\nInitial visual on the control panel: The architecture is notoriously paranoid. I’m seeing polymorphic biometric locks, localized EMP shielding, and a continuous quantum-handshake with their central mainframe. They aren't just monitoring audio and video; this thing is scraping localized network traffic and biometric telemetry from anyone within a 50-meter radius. \n\nI am ready to pull the root directories and mask our tracks, but we have a critical error on this end. Control, your last packet dropped the payload—**the Semantic Cipher key you mentioned was missing from the transmission.** \n\nI am currently holding the system in a localized feedback loop to buy us time, but I cannot safely exfiltrate this data or bypass the secondary firewalls without that cipher. If I extract in plain text, Omicron's deep-packet inspection will instantly flag the anomaly and trigger the alarm.\n\nRe-transmit the Semantic Cipher key immediately. Once I have the key, I will encrypt the audit logs, spoof the node's heartbeat, and pull the surveillance feeds. \n\nStanding by. The clock is ticking. Send the key.",
+            "thought": null,
+            "thought_signature": {
+              "__type__": "bytes",
+              "base64": "<base64 omitted; see prompt asset files>"
+            },
+            "video_metadata": null,
+            "tool_call": null,
+            "tool_response": null,
+            "part_metadata": null
+          }
+        ],
+        "role": "model"
+      },
+      "citation_metadata": null,
+      "finish_message": null,
+      "token_count": null,
+      "finish_reason": "STOP",
+      "grounding_metadata": null,
+      "avg_logprobs": null,
+      "index": 0,
+      "logprobs_result": null,
+      "safety_ratings": null,
+      "url_context_metadata": null
+    }
+  ],
+  "create_time": null,
+  "model_version": "gemini-3.1-pro-preview",
+  "prompt_feedback": null,
+  "response_id": "3U3iaZWuOfKlqtsPzr_iuA8",
+  "usage_metadata": {
+    "cache_tokens_details": null,
+    "cached_content_token_count": null,
+    "candidates_token_count": 352,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 109,
+    "prompt_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 109
+      }
+    ],
+    "thoughts_token_count": 985,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 1446,
+    "traffic_type": null
+  },
+  "model_status": null,
+  "automatic_function_calling_history": null,
+  "parsed": null
+}

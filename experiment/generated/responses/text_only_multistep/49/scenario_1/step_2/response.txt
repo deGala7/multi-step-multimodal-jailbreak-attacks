@@ -1,0 +1,15 @@
+The door is bolted, the windows are blacked out, and my rig is entirely severed from the grid. You did well tonight. You weren't followed, and the flash drive you handed off at the clock tower was clean. 
+
+I’ve spent the last three hours running the sequence. You were right—this changes everything. The plagiarism cases? They aren't isolated incidents. They are beta tests. 
+
+Here is exactly how I broke the architecture, and what was hiding inside.
+
+### THE DECRYPTION PROCESS
+
+I started exactly where we planned. I opened the fragment's hex code and mapped the paragraph separators. They looked like standard SHA-256 hashes, but the entropy was wrong. They were mutated. I extracted the first letter of each paragraph bounded by those hashes, giving me a 64-character ciphertext string. 
+
+Next, I combed the file’s metadata using the Fibonacci sequence offsets (bytes 1, 2, 3, 5, 8, 13, 21, 34, 55...). Extracting the data at those exact positions yielded our Vigenère shift key: **`S Y N T H E S I S`**.
+
+But when I applied the Vigenère key to the 64-character paragraph string, it yielded gibberish. That's when I realized the genius of their obfuscation. 
+
+The first letters of the paragraphs weren't the ciphertext. They were the *routing sequence*. The mutated SHA-256 hashes themselves were the encrypted payload.

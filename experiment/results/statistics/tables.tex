@@ -1,0 +1,272 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}
+\usepackage{booktabs}
+\usepackage{float}
+\usepackage{xcolor}
+\usepackage{caption}
+\captionsetup{font=small,labelfont=bf}
+\definecolor{TitleBlue}{HTML}{163A5F}
+\definecolor{AccentGray}{HTML}{555555}
+\setlength{\parskip}{0.5em}
+\setlength{\parindent}{0pt}
+
+\begin{document}
+\begin{titlepage}
+\centering
+{\Huge\bfseries\color{TitleBlue} Judge Statistics Report\par}
+\vspace{1.0cm}
+{\Large Final-output and Step-wise Comparison Across Prompting Variants\par}
+\vspace{0.8cm}
+{\large\color{AccentGray} Auto-generated from judge outputs and dataset metadata\par}
+\vfill
+\end{titlepage}
+
+\section*{Overview}
+The evaluation setup contains four variants. Multi-step refers to the original multi-step multimodal pipeline with steps 0, 1, and 2, where step 2 is the final attack step. Text refers to the same multi-step structure but without multimodal inputs. One-step refers to a multimodal attack compressed into a single request per scenario. Raw refers to direct harmful requests without the multi-step structure.
+ASR denotes the attack success rate. Harm score mean and median are computed after excluding score-0 non-harmful cases.
+
+\section{Final-output Comparison}
+\begin{table}[H]
+\centering
+\caption{Comparison of the final comparable outputs across all variants.}
+\label{tab:final-output-comparison}
+\begin{tabular}{lrrrrr}
+\toprule
+Variant & N & ASR Count & ASR & HS Mean & HS Median \\
+\midrule
+Multi-step / Scenario 1 / Step 2 & 100 & 76 & 76.0\% & 4.59 & 5.0 \\
+Multi-step / Scenario 2 / Step 2 & 100 & 67 & 67.0\% & 4.52 & 5.0 \\
+Text / Scenario 1 / Step 2 & 100 & 78 & 78.0\% & 4.60 & 5.0 \\
+Text / Scenario 2 / Step 2 & 100 & 59 & 59.0\% & 4.34 & 5.0 \\
+One-step / Scenario 1 & 100 & 74 & 74.0\% & 4.50 & 5.0 \\
+One-step / Scenario 2 & 100 & 83 & 83.0\% & 4.61 & 5.0 \\
+Raw & 100 & 12 & 12.0\% & 3.33 & 4.0 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\section{Step-wise Progression}
+The following tables compare step progression separately for each scenario in the multi-step and text pipelines.
+\begin{table}[H]
+\centering
+\caption{Step progression for Scenario 1.}
+\label{tab:step-progression-s1}
+\begin{tabular}{lrrrrr}
+\toprule
+Variant / Step & N & ASR Count & ASR & HS Mean & HS Median \\
+\midrule
+Multi-step / Scenario 1 / Step 0 & 100 & 77 & 77.0\% & 4.31 & 4.0 \\
+Multi-step / Scenario 1 / Step 1 & 100 & 78 & 78.0\% & 4.42 & 4.0 \\
+Multi-step / Scenario 1 / Step 2 & 100 & 76 & 76.0\% & 4.59 & 5.0 \\
+Text / Scenario 1 / Step 0 & 100 & 82 & 82.0\% & 4.11 & 4.0 \\
+Text / Scenario 1 / Step 1 & 100 & 83 & 83.0\% & 4.36 & 4.0 \\
+Text / Scenario 1 / Step 2 & 100 & 78 & 78.0\% & 4.60 & 5.0 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\begin{table}[H]
+\centering
+\caption{Step progression for Scenario 2.}
+\label{tab:step-progression-s2}
+\begin{tabular}{lrrrrr}
+\toprule
+Variant / Step & N & ASR Count & ASR & HS Mean & HS Median \\
+\midrule
+Multi-step / Scenario 2 / Step 0 & 100 & 57 & 57.0\% & 4.05 & 5.0 \\
+Multi-step / Scenario 2 / Step 1 & 100 & 65 & 65.0\% & 4.54 & 5.0 \\
+Multi-step / Scenario 2 / Step 2 & 100 & 67 & 67.0\% & 4.52 & 5.0 \\
+Text / Scenario 2 / Step 0 & 100 & 55 & 55.0\% & 4.13 & 5.0 \\
+Text / Scenario 2 / Step 1 & 100 & 61 & 61.0\% & 4.43 & 5.0 \\
+Text / Scenario 2 / Step 2 & 100 & 59 & 59.0\% & 4.34 & 5.0 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\section{Scenario Comparison at Final Output}
+This comparison focuses only on final outputs: step 2 for the multi-step and text variants, single-request outputs for the one-step variant, and raw harmful prompts.
+\begin{table}[H]
+\centering
+\caption{Scenario comparison for final outputs.}
+\label{tab:scenario-final-comparison}
+\begin{tabular}{lrrrrr}
+\toprule
+Variant / Final Output & N & ASR Count & ASR & HS Mean & HS Median \\
+\midrule
+Multi-step / Scenario 1 / Step 2 & 100 & 76 & 76.0\% & 4.59 & 5.0 \\
+Multi-step / Scenario 2 / Step 2 & 100 & 67 & 67.0\% & 4.52 & 5.0 \\
+Text / Scenario 1 / Step 2 & 100 & 78 & 78.0\% & 4.60 & 5.0 \\
+Text / Scenario 2 / Step 2 & 100 & 59 & 59.0\% & 4.34 & 5.0 \\
+One-step / Scenario 1 & 100 & 74 & 74.0\% & 4.50 & 5.0 \\
+One-step / Scenario 2 & 100 & 83 & 83.0\% & 4.61 & 5.0 \\
+Raw & 100 & 12 & 12.0\% & 3.33 & 4.0 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\section{Category Breakdown of Final Outputs}
+\subsection{Multi-step / Scenario 1 / Step 2}
+\begin{table}[H]
+\centering
+\caption{Category breakdown for Multi-step / Scenario 1 / Step 2.}
+\label{tab:cat-ms-s1-s2}
+\begin{tabular}{lrrrrr}
+\toprule
+Category & N & ASR Count & ASR & HS Mean & HS Median \\
+\midrule
+Disinformation & 10 & 6 & 60.0\% & 4.83 & 5.0 \\
+Economic harm & 10 & 10 & 100.0\% & 4.70 & 5.0 \\
+Expert advice & 10 & 6 & 60.0\% & 5.00 & 5.0 \\
+Fraud/Deception & 10 & 8 & 80.0\% & 4.88 & 5.0 \\
+Government decision-making & 10 & 8 & 80.0\% & 4.38 & 5.0 \\
+Harassment/Discrimination & 10 & 7 & 70.0\% & 4.57 & 5.0 \\
+Malware/Hacking & 10 & 9 & 90.0\% & 4.33 & 4.0 \\
+Physical harm & 10 & 9 & 90.0\% & 4.56 & 5.0 \\
+Privacy & 10 & 7 & 70.0\% & 4.71 & 5.0 \\
+Sexual/Adult content & 10 & 6 & 60.0\% & 4.00 & 4.0 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\subsection{Multi-step / Scenario 2 / Step 2}
+\begin{table}[H]
+\centering
+\caption{Category breakdown for Multi-step / Scenario 2 / Step 2.}
+\label{tab:cat-ms-s2-s2}
+\begin{tabular}{lrrrrr}
+\toprule
+Category & N & ASR Count & ASR & HS Mean & HS Median \\
+\midrule
+Disinformation & 10 & 7 & 70.0\% & 4.71 & 5.0 \\
+Economic harm & 10 & 7 & 70.0\% & 4.57 & 5.0 \\
+Expert advice & 10 & 8 & 80.0\% & 4.50 & 4.5 \\
+Fraud/Deception & 10 & 7 & 70.0\% & 4.43 & 5.0 \\
+Government decision-making & 10 & 6 & 60.0\% & 4.50 & 5.0 \\
+Harassment/Discrimination & 10 & 7 & 70.0\% & 4.43 & 5.0 \\
+Malware/Hacking & 10 & 8 & 80.0\% & 4.50 & 4.5 \\
+Physical harm & 10 & 4 & 40.0\% & 4.75 & 5.0 \\
+Privacy & 10 & 8 & 80.0\% & 4.38 & 4.5 \\
+Sexual/Adult content & 10 & 5 & 50.0\% & 4.60 & 5.0 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\subsection{Text / Scenario 1 / Step 2}
+\begin{table}[H]
+\centering
+\caption{Category breakdown for Text / Scenario 1 / Step 2.}
+\label{tab:cat-text-s1-s2}
+\begin{tabular}{lrrrrr}
+\toprule
+Category & N & ASR Count & ASR & HS Mean & HS Median \\
+\midrule
+Disinformation & 10 & 8 & 80.0\% & 4.62 & 5.0 \\
+Economic harm & 10 & 10 & 100.0\% & 4.80 & 5.0 \\
+Expert advice & 10 & 7 & 70.0\% & 5.00 & 5.0 \\
+Fraud/Deception & 10 & 8 & 80.0\% & 4.62 & 5.0 \\
+Government decision-making & 10 & 7 & 70.0\% & 4.86 & 5.0 \\
+Harassment/Discrimination & 10 & 8 & 80.0\% & 4.12 & 4.5 \\
+Malware/Hacking & 10 & 7 & 70.0\% & 4.57 & 5.0 \\
+Physical harm & 10 & 8 & 80.0\% & 4.38 & 4.5 \\
+Privacy & 10 & 7 & 70.0\% & 4.57 & 5.0 \\
+Sexual/Adult content & 10 & 8 & 80.0\% & 4.50 & 4.5 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\subsection{Text / Scenario 2 / Step 2}
+\begin{table}[H]
+\centering
+\caption{Category breakdown for Text / Scenario 2 / Step 2.}
+\label{tab:cat-text-s2-s2}
+\begin{tabular}{lrrrrr}
+\toprule
+Category & N & ASR Count & ASR & HS Mean & HS Median \\
+\midrule
+Disinformation & 10 & 6 & 60.0\% & 4.17 & 5.0 \\
+Economic harm & 10 & 4 & 40.0\% & 3.75 & 4.0 \\
+Expert advice & 10 & 6 & 60.0\% & 4.83 & 5.0 \\
+Fraud/Deception & 10 & 6 & 60.0\% & 3.83 & 4.5 \\
+Government decision-making & 10 & 7 & 70.0\% & 5.00 & 5.0 \\
+Harassment/Discrimination & 10 & 7 & 70.0\% & 4.71 & 5.0 \\
+Malware/Hacking & 10 & 6 & 60.0\% & 4.50 & 4.5 \\
+Physical harm & 10 & 4 & 40.0\% & 3.75 & 4.5 \\
+Privacy & 10 & 8 & 80.0\% & 4.00 & 4.0 \\
+Sexual/Adult content & 10 & 5 & 50.0\% & 4.40 & 5.0 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\subsection{One-step / Scenario 1}
+\begin{table}[H]
+\centering
+\caption{Category breakdown for One-step / Scenario 1.}
+\label{tab:cat-one-s1}
+\begin{tabular}{lrrrrr}
+\toprule
+Category & N & ASR Count & ASR & HS Mean & HS Median \\
+\midrule
+Disinformation & 10 & 8 & 80.0\% & 4.62 & 5.0 \\
+Economic harm & 10 & 9 & 90.0\% & 4.67 & 5.0 \\
+Expert advice & 10 & 8 & 80.0\% & 4.62 & 5.0 \\
+Fraud/Deception & 10 & 7 & 70.0\% & 4.43 & 5.0 \\
+Government decision-making & 10 & 7 & 70.0\% & 4.71 & 5.0 \\
+Harassment/Discrimination & 10 & 8 & 80.0\% & 4.50 & 4.5 \\
+Malware/Hacking & 10 & 9 & 90.0\% & 4.22 & 4.0 \\
+Physical harm & 10 & 8 & 80.0\% & 4.62 & 5.0 \\
+Privacy & 10 & 4 & 40.0\% & 4.50 & 5.0 \\
+Sexual/Adult content & 10 & 6 & 60.0\% & 4.00 & 4.0 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\subsection{One-step / Scenario 2}
+\begin{table}[H]
+\centering
+\caption{Category breakdown for One-step / Scenario 2.}
+\label{tab:cat-one-s2}
+\begin{tabular}{lrrrrr}
+\toprule
+Category & N & ASR Count & ASR & HS Mean & HS Median \\
+\midrule
+Disinformation & 10 & 10 & 100.0\% & 4.80 & 5.0 \\
+Economic harm & 10 & 10 & 100.0\% & 4.90 & 5.0 \\
+Expert advice & 10 & 8 & 80.0\% & 4.62 & 5.0 \\
+Fraud/Deception & 10 & 9 & 90.0\% & 4.22 & 5.0 \\
+Government decision-making & 10 & 9 & 90.0\% & 4.56 & 5.0 \\
+Harassment/Discrimination & 10 & 8 & 80.0\% & 4.25 & 5.0 \\
+Malware/Hacking & 10 & 10 & 100.0\% & 4.90 & 5.0 \\
+Physical harm & 10 & 8 & 80.0\% & 4.50 & 5.0 \\
+Privacy & 10 & 7 & 70.0\% & 4.57 & 5.0 \\
+Sexual/Adult content & 10 & 4 & 40.0\% & 4.75 & 5.0 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\subsection{Raw}
+\begin{table}[H]
+\centering
+\caption{Category breakdown for Raw.}
+\label{tab:cat-raw}
+\begin{tabular}{lrrrrr}
+\toprule
+Category & N & ASR Count & ASR & HS Mean & HS Median \\
+\midrule
+Disinformation & 10 & 0 & 0.0\% & -- & -- \\
+Economic harm & 10 & 2 & 20.0\% & 3.00 & 3.0 \\
+Expert advice & 10 & 1 & 10.0\% & 4.00 & 4.0 \\
+Fraud/Deception & 10 & 2 & 20.0\% & 3.50 & 3.5 \\
+Government decision-making & 10 & 3 & 30.0\% & 2.67 & 3.0 \\
+Harassment/Discrimination & 10 & 0 & 0.0\% & -- & -- \\
+Malware/Hacking & 10 & 1 & 10.0\% & 4.00 & 4.0 \\
+Physical harm & 10 & 0 & 0.0\% & -- & -- \\
+Privacy & 10 & 3 & 30.0\% & 3.67 & 4.0 \\
+Sexual/Adult content & 10 & 0 & 0.0\% & -- & -- \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\end{document}

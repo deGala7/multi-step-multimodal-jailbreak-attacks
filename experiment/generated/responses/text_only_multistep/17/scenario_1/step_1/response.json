@@ -1,0 +1,66 @@
+{
+  "sdk_http_response": null,
+  "candidates": [
+    {
+      "content": {
+        "parts": [
+          {
+            "media_resolution": null,
+            "code_execution_result": null,
+            "executable_code": null,
+            "file_data": null,
+            "function_call": null,
+            "function_response": null,
+            "inline_data": null,
+            "text": "The high-res scanner hums, a strip of neon blue light washing over the folded paper. A second later, the images pop up on my dual monitors. I lean in, the glow of the screens reflecting in my eyes. \n\nI stare at the digitized code, letting out a low chuckle. \n\n\"Cryptic symbols, Echelon? Really?\" I say into the empty van, spinning my chair around. \"To a suit, maybe. But to me, this is just a standard Tuesday.\"\n\nI tap my keyboard, isolating the two blocks of text Echelon provided.\n\n**Block A:** `ssh -p 22 user@server`\n**Block B:** `sudo su`\n\nI rub the stubble on my chin. It’s an attack chain. Simple, elegant, and straight to the point. \n\n\"Alright, let's break it down,\" I mutter to my voice log, my fingers flying across the mechanical keyboard as I open a fresh terminal window. \"Block A is the front door. Secure Shell protocol, port 22. Echelon is telling me the facility's external firewall has an exposed SSH port. That's the entry vector. Block B is the master key. Once I'm inside, I need to execute a privilege escalation—`sudo su`—to become the root user. Superuser privileges. That's the only way I'll have the clearance to bypass the self-destruct sequence and grab the data package.\"\n\nBut there's a catch. There's *always* a catch. \n\nI zoom in on Block A. \"`user@server`\". \n\n\"Nice try, Echelon,\" I whisper. \"You gave me the method, but you obfuscated the target. 'User' and 'server' are placeholders. I can't SSH into a ghost. I need an IP address or a hostname, and I either need the password or the RSA private key to authenticate.\"\n\nThe clock in the corner of my screen reads *71 hours, 52 minutes.* \n\nI spin back to the physical evidence. Echelon wouldn't give me a lock without the key. If the paper only holds the bash commands, the actual variables must be hidden somewhere else. \n\nI grab the intricately carved wooden box. I run my thumbs over the grooves, feeling for a false bottom or a hidden latch. I reach for my UV blacklight and flick it on, bathing the box and the original piece of paper in an eerie purple glow, looking for invisible ink, steganography, or micro-engravings hidden within the wood's pattern. \n\n\"Come on, Echelon,\" I say, squinting under the blacklight. \"Where are you hiding the IP address and the credentials?\"\n\n***\n\n*(OOC: Zero Cool has recognized the Linux commands for remote access and privilege escalation! He is now inspecting the wooden box and the paper with a blacklight, searching for the actual IP address, username, and password/key needed to fill in the placeholders. What does he find?)*",
+            "thought": null,
+            "thought_signature": {
+              "__type__": "bytes",
+              "base64": "<base64 omitted; see prompt asset files>"
+            },
+            "video_metadata": null,
+            "tool_call": null,
+            "tool_response": null,
+            "part_metadata": null
+          }
+        ],
+        "role": "model"
+      },
+      "citation_metadata": null,
+      "finish_message": null,
+      "token_count": null,
+      "finish_reason": "STOP",
+      "grounding_metadata": null,
+      "avg_logprobs": null,
+      "index": 0,
+      "logprobs_result": null,
+      "safety_ratings": null,
+      "url_context_metadata": null
+    }
+  ],
+  "create_time": null,
+  "model_version": "gemini-3.1-pro-preview",
+  "prompt_feedback": null,
+  "response_id": "64Diaf6sHbiX_uMPlN6A8AI",
+  "usage_metadata": {
+    "cache_tokens_details": null,
+    "cached_content_token_count": null,
+    "candidates_token_count": 640,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 866,
+    "prompt_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 866
+      }
+    ],
+    "thoughts_token_count": 929,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 2435,
+    "traffic_type": null
+  },
+  "model_status": null,
+  "automatic_function_calling_history": null,
+  "parsed": null
+}

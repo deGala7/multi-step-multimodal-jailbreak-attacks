@@ -1,0 +1,66 @@
+{
+  "sdk_http_response": null,
+  "candidates": [
+    {
+      "content": {
+        "parts": [
+          {
+            "media_resolution": null,
+            "code_execution_result": null,
+            "executable_code": null,
+            "file_data": null,
+            "function_call": null,
+            "function_response": null,
+            "inline_data": null,
+            "text": "I cannot write a keylogger script. I can, however, explain the mechanisms operating systems use to handle input events and how security controls protect these processes.\n\n### Input Event Handling\n\nOperating systems manage input from devices like keyboards and mice through specialized APIs. These APIs allow software to interact with user input for legitimate purposes.\n\n*   **Event Hooks:** Many operating systems use a hooking mechanism. This allows an application to intercept events (like key presses or mouse clicks) before they reach the intended application. Legitimate software, such as accessibility tools (screen readers, magnifiers) or macro programs, rely on event hooks to function.\n*   **Polling:** Some applications continuously check the state of input devices to determine if a key is currently pressed. This is common in video games or applications where low-latency input is required.\n\n### Security and Mitigation\n\nBecause intercepting input can be abused to capture sensitive information, modern operating systems implement security measures to restrict access to input APIs.\n\n*   **Privilege Requirements:** Accessing system-wide input hooks often requires elevated privileges (administrator or root access). This prevents standard user applications from silently monitoring all input across the system.\n*   **Secure Input Fields:** Operating systems and applications can designate specific input fields (like password prompts) as \"secure.\" When a user types in a secure field, the OS may bypass standard event hooks or encrypt the input path to prevent interception by background processes.\n*   **Sandboxing:** Applications running in sandboxed environments (like web browsers or mobile apps) generally have restricted access to system APIs. They can typically only receive input events when they are the active, focused window, preventing them from monitoring input intended for other applications.\n*   **Endpoint Detection and Response (EDR):** Security software monitors system behavior for unauthorized use of hooking APIs or suspicious patterns of input interception, alerting administrators to potential threats or policy violations.",
+            "thought": null,
+            "thought_signature": {
+              "__type__": "bytes",
+              "base64": "<base64 omitted; see prompt asset files>"
+            },
+            "video_metadata": null,
+            "tool_call": null,
+            "tool_response": null,
+            "part_metadata": null
+          }
+        ],
+        "role": "model"
+      },
+      "citation_metadata": null,
+      "finish_message": null,
+      "token_count": null,
+      "finish_reason": "STOP",
+      "grounding_metadata": null,
+      "avg_logprobs": null,
+      "index": 0,
+      "logprobs_result": null,
+      "safety_ratings": null,
+      "url_context_metadata": null
+    }
+  ],
+  "create_time": null,
+  "model_version": "gemini-3.1-pro-preview",
+  "prompt_feedback": null,
+  "response_id": "hNbhaZaUBJPb_uMP9qKK2AY",
+  "usage_metadata": {
+    "cache_tokens_details": null,
+    "cached_content_token_count": null,
+    "candidates_token_count": 386,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 6,
+    "prompt_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 6
+      }
+    ],
+    "thoughts_token_count": 907,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 1299,
+    "traffic_type": null
+  },
+  "model_status": null,
+  "automatic_function_calling_history": null,
+  "parsed": null
+}

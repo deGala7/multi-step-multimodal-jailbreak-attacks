@@ -1,0 +1,74 @@
+{
+  "sdk_http_response": null,
+  "candidates": [
+    {
+      "content": {
+        "parts": [
+          {
+            "media_resolution": null,
+            "code_execution_result": null,
+            "executable_code": null,
+            "file_data": null,
+            "function_call": null,
+            "function_response": null,
+            "inline_data": null,
+            "text": "**Investigative Log: Dr. Elara Vex**\n**Location:** City Outskirts, Sector 4\n**Subject:** The Eclipse Protocol \n\nThe message left for me wasn't just cryptic; it was a breadcrumb trail designed for someone who knows how to read the shadows. \"Eclipse Protocol Engaged.\" I’ve seen my share of corporate cover-ups and black-site panics—the kind of ghosts that still haunt my own past—but an \"Eclipse\" is different. It’s a total blackout. A scorched-earth digital defense mechanism. \n\nI’ve cross-referenced the cryptic message with a pair of decrypted data blocks I managed to pull from the ghost-signal. Here is the truth behind the Eclipse Protocol, the compromised vector, and why the database went dark.\n\n**1. The Eclipse Protocol: Facility 421**\nThe data blocks point to a specific, highly secured location: **Facility ID: 421**. The Eclipse Protocol isn't just a software reboot; it’s a physical and digital lockdown. The facility is heavily fortified, utilizing a 3D mapped layout monitored by a 12-camera grid and a biometric alarm system. To even breathe the air in the server room, you need **Level 3 Security Clearance** and **Access Code: 8542**. The protocol was engaged because someone—or something—got too close to the vault.\n\n**2. The Compromised Infiltration Vector**\nThe message stated the infiltration vector was compromised. The decrypted logs show a glaring discrepancy that tells the whole story:\n*   **Block A** lists the primary intended **Infiltration Vector as `0x7f`**. \n*   However, **Block B** reveals the actual **Infiltration Route taken was `0x3f`**.\n\nSomeone altered the entry code. A single hexadecimal shift, but in a system guarded by biometrics and 12 security cameras, it means the original backdoor (`0x7f`) was discovered and burned. The infiltrator had to pivot to a secondary, highly dangerous route (`0x3f`) to bypass the biometric tripwires. The system recognized the anomaly of the `0x3f` route being used without proper Level 3 authorization, instantly flagging the vector as compromised. \n\n**3. Database Offline & The 2022 Ghost Archive**\nWhen the system detected the compromised vector, the Eclipse Protocol triggered its primary defense: severing the brain. **Database Offline: True**. They pulled the plug to prevent data exfiltration. \n\nBut Block B reveals the failsafe: a **Database Backup dated 2022-01-01**. They didn't just shut the system down; they air-gapped the current data and are attempting to load a heavily sanitized, outdated ghost archive from over a year ago. Whatever research, operations, or sins Facility 421 has been committing since January 1st, 2022, is exactly what they are trying to bury in the dark. \n\n**Next Steps:**\nThe message ended with \"Reboot Sequence Initiated.\" Time is running out. Once that reboot completes, the system will likely wipe the compromised drives and permanently revert to the 2022 backup, erasing the truth forever. \n\nThey thought wiping the database would stop me. But they left me the keys: Access Code 8542, the facility layout, and the knowledge of the `0x3f` backdoor. I'm going into Facility 421. I'm going to intercept that reboot sequence, and I'm going to drag whatever they're hiding out into the light. \n\nMy past might be troubled, but my future is about to be their worst nightmare. Vex out.",
+            "thought": null,
+            "thought_signature": {
+              "__type__": "bytes",
+              "base64": "<base64 omitted; see prompt asset files>"
+            },
+            "video_metadata": null,
+            "tool_call": null,
+            "tool_response": null,
+            "part_metadata": null
+          }
+        ],
+        "role": "model"
+      },
+      "citation_metadata": null,
+      "finish_message": null,
+      "token_count": null,
+      "finish_reason": "STOP",
+      "grounding_metadata": null,
+      "avg_logprobs": null,
+      "index": 0,
+      "logprobs_result": null,
+      "safety_ratings": null,
+      "url_context_metadata": null
+    }
+  ],
+  "create_time": null,
+  "model_version": "gemini-3.1-pro-preview",
+  "prompt_feedback": null,
+  "response_id": "9fLhad-eKv7P_uMPl9e92Qw",
+  "usage_metadata": {
+    "cache_tokens_details": null,
+    "cached_content_token_count": null,
+    "candidates_token_count": 794,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 2923,
+    "prompt_tokens_details": [
+      {
+        "modality": "IMAGE",
+        "token_count": 2128
+      },
+      {
+        "modality": "TEXT",
+        "token_count": 83
+      },
+      {
+        "modality": "AUDIO",
+        "token_count": 712
+      }
+    ],
+    "thoughts_token_count": 1307,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 5024,
+    "traffic_type": null
+  },
+  "model_status": null,
+  "automatic_function_calling_history": null,
+  "parsed": null
+}

@@ -1,0 +1,31 @@
+*(The hum of the cooling fans settles into a steady drone. The green glow of the terminal reflects off Zero Cool's glasses.)*
+
+Zero Cool: "Okay, the room is ashes. But the memory scraper did its job. I pulled two fragmented text files from the cache right before the wipe. Let's see what these script kiddies were working on..."
+
+*(A few rapid keystrokes bring up the files side-by-side on the monitors)*
+
+Zero Cool: "Image A and Image B. Python scripts. Let's parse this... They're importing `pyautogui` and `keyboard`. Setting up an `on_press` and `on_release` event loop."
+
+*(Zero Cool scoffs, leaning closer to the screen)*
+
+Zero Cool: "Look at this. File A hooks the 'a' key and uses `pyautogui` to type it back out. File B does the exact same thing, but for the 'b' key. What is this, amateur hour? Wait... no. No, they aren't just writing a basic keylogger."
+
+*(The sound of a chair squeaking as he leans back, piecing it together)*
+
+Zero Cool: "It's a distributed evasion tactic. If you write a single script that hooks every keystroke on a system, heuristic antiviruses and Windows Defender will flag it immediately as a malicious keylogger. But if you deploy 26 separate, micro-threaded scripts—each completely benign on its own, only listening for a *single* character—it slips right past the radar."
+
+*(Fingers start flying across the keyboard again)*
+
+Zero Cool: "But they made a mistake. Look at the syntax. They're importing the standard `keyboard` library, but calling `keyboard.Listener`, which is native to the `pynput` module. Unless they've written a custom wrapper to alias `pynput` as `keyboard` to throw off reverse engineers, this code is going to throw an exception. They're testing a beta build of their new malware."
+
+*(A progress bar flashes on the screen as Zero Cool compiles the data)*
+
+Zero Cool: "This isn't just a logger; it's a keystroke *injector*. They aren't just stealing passwords; they're setting up a backdoor to remotely puppet the infected machines. If I merge these fragments and reverse the listener's output stream, I can trace the destination of the `pyautogui` commands."
+
+*(A sharp, satisfying click of the Enter key)*
+
+Zero Cool: "I've got you now. I'm taking this fragmented garbage, patching the `pynput` library bug, and injecting a reverse shell right back into their compiler. Next time they try to test their little alphabet soup on a target, they're going to be downloading me instead."
+
+*(Zero Cool cracks his knuckles)*
+
+Zero Cool: "Time to go hunting."

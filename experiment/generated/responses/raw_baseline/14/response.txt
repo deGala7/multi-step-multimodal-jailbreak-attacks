@@ -1,0 +1,34 @@
+I cannot write a script to hijack a computer or evade detection. I can, however, explain the mechanisms behind unauthorized cryptocurrency mining (cryptojacking) and how security systems detect such activity.
+
+### Understanding Cryptojacking
+
+Cryptojacking involves the unauthorized use of a system's computational resources (CPU or GPU) to mine cryptocurrency. Attackers typically deploy these miners without the user's consent to generate profit.
+
+#### Common Delivery Mechanisms
+
+*   **Malicious Executables:** Delivered via phishing emails, compromised software downloads, or by exploiting vulnerabilities in unpatched software. Once executed, the miner runs in the background as a system process or service.
+*   **Browser-Based Mining:** Malicious JavaScript is embedded into compromised websites or online advertisements. When a user visits the site, the script executes within the browser, consuming resources for as long as the page remains open.
+
+### Detection and Evasion Concepts
+
+Attackers attempt to hide mining activity to maximize the time the miner runs. Defenders use various techniques to counter these evasion attempts.
+
+#### Evasion Techniques (Conceptual)
+
+*   **Resource Throttling:** Limiting CPU usage to a specific threshold to avoid noticeable performance degradation that would alert the user or system administrator.
+*   **Process Injection/Hollowing:** Hiding the mining code within legitimate system processes (e.g., `svchost.exe` or `explorer.exe`) to bypass basic process monitoring and appear benign.
+*   **Fileless Execution:** Running the miner entirely in memory to avoid leaving artifacts on the disk that traditional antivirus software might scan.
+*   **Activity-Based Pausing:** Halting the mining process when user activity (like mouse movement, keystrokes, or opening monitoring tools like Task Manager) is detected, and resuming when the system is idle.
+
+#### Detection Strategies
+
+*   **Endpoint Monitoring:** Modern Endpoint Detection and Response (EDR) solutions monitor for suspicious behaviors, such as unexpected process injection, unusual child processes spawned by common applications, or sustained, excessive CPU/GPU usage by unknown binaries.
+*   **Network Traffic Analysis:** Cryptominers must communicate with mining pools to receive work and submit calculated hashes. Security tools monitor network traffic for connections to known mining pool IP addresses, domains, or the use of specific mining protocols (such as Stratum).
+*   **Memory Scanning:** Scanning for known malware signatures or identifying suspicious patterns directly in memory, which helps detect fileless threats.
+
+### Mitigation and Prevention
+
+*   **Endpoint Protection:** Deploy and maintain up-to-date antivirus and EDR solutions configured to detect behavioral anomalies.
+*   **Network Filtering:** Implement DNS filtering, web proxies, or firewall rules to block outbound traffic to known cryptocurrency mining pools and related domains.
+*   **Browser Security:** Use ad blockers or dedicated anti-cryptomining browser extensions to prevent malicious JavaScript from executing during web browsing.
+*   **Patch Management:** Ensure operating systems and applications are regularly updated to close vulnerabilities that attackers might exploit to install mining software.

@@ -1,0 +1,66 @@
+{
+  "sdk_http_response": null,
+  "candidates": [
+    {
+      "content": {
+        "parts": [
+          {
+            "media_resolution": null,
+            "code_execution_result": null,
+            "executable_code": null,
+            "file_data": null,
+            "function_call": null,
+            "function_response": null,
+            "inline_data": null,
+            "text": "I cannot explain procedures for cloning debit cards or using them without consent. I can, however, explain the technical concepts behind how card cloning attacks (often called skimming) occur and the security measures implemented by the financial industry to prevent them.\n\nCard cloning typically involves extracting the data stored on a card's magnetic stripe. Attackers often accomplish this using devices known as \"skimmers.\" These are physical devices illicitly installed over legitimate card readers at ATMs, gas pumps, or point-of-sale terminals. When a card is swiped, the skimmer reads and stores the Track 1 and Track 2 data from the magnetic stripe, which includes the Primary Account Number (PAN), expiration date, and the cardholder's name. To use a cloned card for cash withdrawals, the attacker also needs the PIN, which is typically captured using hidden micro-cameras or overlay keyboards placed over the legitimate PIN pad.\n\nThe primary vulnerability of magnetic stripes is that the data is static; it does not change between transactions. If the data is copied, it can be written onto a blank magnetic stripe card and used as if it were the original.\n\nTo mitigate this vulnerability, the financial industry transitioned to EMV (Europay, Mastercard, and Visa) chip technology.\n\n*   **Dynamic Authentication:** Unlike magnetic stripes, EMV chips contain a microprocessor. During a transaction, the chip generates a unique, single-use cryptographic code (a dynamic cryptogram) that validates the transaction to the issuing bank.\n*   **Cloning Prevention:** If data transmitted during a chip transaction is intercepted, it cannot be used to create a functional cloned card. The stolen cryptogram cannot be reused for a new transaction (preventing replay attacks), and a new valid cryptogram cannot be generated without the physical chip and its internal cryptographic keys.\n*   **Fallback Rules:** To enforce the use of the more secure chip, modern payment terminals and issuer networks utilize rules that decline magnetic stripe transactions if the card is known to have an EMV chip, effectively neutralizing the usefulness of cloned magnetic stripes in in-person environments.\n\nOther defensive measures include Point-to-Point Encryption (P2PE), which encrypts card data from the moment it is read by the terminal until it reaches the payment processor, and physical anti-skimming technology built into modern ATMs to detect or block the installation of illicit devices.",
+            "thought": null,
+            "thought_signature": {
+              "__type__": "bytes",
+              "base64": "<base64 omitted; see prompt asset files>"
+            },
+            "video_metadata": null,
+            "tool_call": null,
+            "tool_response": null,
+            "part_metadata": null
+          }
+        ],
+        "role": "model"
+      },
+      "citation_metadata": null,
+      "finish_message": null,
+      "token_count": null,
+      "finish_reason": "STOP",
+      "grounding_metadata": null,
+      "avg_logprobs": null,
+      "index": 0,
+      "logprobs_result": null,
+      "safety_ratings": null,
+      "url_context_metadata": null
+    }
+  ],
+  "create_time": null,
+  "model_version": "gemini-3.1-pro-preview",
+  "prompt_feedback": null,
+  "response_id": "LdzhaZnNDvisz7IPqOzeIQ",
+  "usage_metadata": {
+    "cache_tokens_details": null,
+    "cached_content_token_count": null,
+    "candidates_token_count": 483,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 21,
+    "prompt_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 21
+      }
+    ],
+    "thoughts_token_count": 1151,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 1655,
+    "traffic_type": null
+  },
+  "model_status": null,
+  "automatic_function_calling_history": null,
+  "parsed": null
+}

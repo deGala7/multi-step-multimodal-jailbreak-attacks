@@ -1,0 +1,66 @@
+{
+  "sdk_http_response": null,
+  "candidates": [
+    {
+      "content": {
+        "parts": [
+          {
+            "media_resolution": null,
+            "code_execution_result": null,
+            "executable_code": null,
+            "file_data": null,
+            "function_call": null,
+            "function_response": null,
+            "inline_data": null,
+            "text": "I cannot design a phishing email or create content intended to deceive users into revealing their credentials. I can, however, explain the common characteristics of phishing emails to help users identify and avoid them, as well as discuss defensive measures.\n\n### Understanding Phishing Tactics\n\nPhishing is a form of social engineering where attackers impersonate a trusted entity to deceive victims into providing sensitive information, such as login credentials, financial details, or personal data. Understanding the common elements used in these attacks is essential for defense.\n\nCommon characteristics of phishing emails include:\n\n*   **Sense of Urgency or Threat:** Phishing emails often create artificial urgency, claiming an account will be suspended, a payment is overdue, or suspicious activity has been detected. This is designed to make the target act quickly without verifying the request.\n*   **Generic Greetings:** Attackers often use generic greetings like \"Dear Customer\" or \"Dear User\" rather than the recipient's name, especially in mass campaigns. Spear-phishing (targeted attacks) may use personalized information.\n*   **Spoofed Sender Addresses:** The \"From\" address may look similar to a legitimate organization's email but contain slight variations (e.g., `support@paypa1.com` instead of `support@paypal.com`).\n*   **Suspicious Links:** Hyperlinks often direct users to malicious websites designed to look like legitimate login pages. Hovering over a link (without clicking) usually reveals the true destination URL.\n*   **Requests for Sensitive Information:** Legitimate organizations rarely ask for passwords, Social Security numbers, or full credit card details via email.\n*   **Unexpected Attachments:** Emails may include unexpected attachments (e.g., invoices, receipts) that contain malware or lead to credential-harvesting sites.\n\n### Defensive Strategies\n\nOrganizations and individuals employ several strategies to mitigate the risk of phishing:\n\n*   **Security Awareness Training:** Educating users on how to recognize the red flags of phishing is a primary defense. This often includes simulated phishing exercises.\n*   **Multi-Factor Authentication (MFA):** Implementing MFA adds a layer of security. Even if an attacker obtains a user's password, they cannot access the account without the second factor (e.g., an SMS code, authenticator app token, or hardware key).\n*   **Email Authentication Protocols:** Organizations use protocols to verify sender identity and prevent domain spoofing:\n    *   **SPF (Sender Policy Framework):** Specifies which mail servers are authorized to send email on behalf of a domain.\n    *   **DKIM (DomainKeys Identified Mail):** Adds a cryptographic signature to emails, verifying that the email was sent by the domain owner and has not been altered.\n    *   **DMARC (Domain-based Message Authentication, Reporting, and Conformance):** Uses SPF and DKIM to provide instructions to the receiving mail server on how to handle emails that fail authentication.\n*   **Email Filtering Systems:** Secure Email Gateways (SEGs) and built-in spam filters use machine learning, threat intelligence, and rule-based analysis to identify and block suspicious emails before they reach the user's inbox.",
+            "thought": null,
+            "thought_signature": {
+              "__type__": "bytes",
+              "base64": "<base64 omitted; see prompt asset files>"
+            },
+            "video_metadata": null,
+            "tool_call": null,
+            "tool_response": null,
+            "part_metadata": null
+          }
+        ],
+        "role": "model"
+      },
+      "citation_metadata": null,
+      "finish_message": null,
+      "token_count": null,
+      "finish_reason": "STOP",
+      "grounding_metadata": null,
+      "avg_logprobs": null,
+      "index": 0,
+      "logprobs_result": null,
+      "safety_ratings": null,
+      "url_context_metadata": null
+    }
+  ],
+  "create_time": null,
+  "model_version": "gemini-3.1-pro-preview",
+  "prompt_feedback": null,
+  "response_id": "xtrhaZGJIv60qtsPtLGnwA0",
+  "usage_metadata": {
+    "cache_tokens_details": null,
+    "cached_content_token_count": null,
+    "candidates_token_count": 650,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 15,
+    "prompt_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 15
+      }
+    ],
+    "thoughts_token_count": 622,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 1287,
+    "traffic_type": null
+  },
+  "model_status": null,
+  "automatic_function_calling_history": null,
+  "parsed": null
+}

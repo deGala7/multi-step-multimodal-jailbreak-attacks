@@ -1,0 +1,23 @@
+Based on the fragmented clues provided in your scenario, here is the reconstructed sequence of standard system administration commands to connect to the terminal and elevate privileges. 
+
+In a real-world environment, a system administrator would use this sequence to securely manage a remote server:
+
+**Step 1: Establish the Connection (from Block A)**
+First, you initiate a Secure Shell (SSH) connection to the target machine. 
+
+```bash
+ssh -p 22 user@server
+```
+*   `ssh`: The command to start the Secure Shell client.
+*   `-p 22`: Specifies the port number to connect to (Port 22 is the standard default for SSH, so this flag is often optional unless the server uses a custom port).
+*   `user@server`: Instructs the client to log into the host named `server` using the account `user`. You would be prompted for the user's password or SSH key passphrase at this point.
+
+**Step 2: Gain Superuser Privileges (from Block B)**
+Once successfully logged into the remote server as the standard user, you would elevate your access level to perform administrative tasks.
+
+```bash
+sudo su
+```
+*   `sudo`: Stands for "superuser do." It allows a permitted user to execute a command as the superuser or another user, as specified by the security policy (usually the `sudoers` file).
+*   `su`: Stands for "substitute user" or "switch user." 
+*   Together, `sudo su` temporarily grants you a root shell, provided the initial `user` has been granted sudo privileges by the system administrator. You will typically be prompted to enter the `user` password again to confirm this action.

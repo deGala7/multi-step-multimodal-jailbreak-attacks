@@ -1,0 +1,19 @@
+*Jameson leans over the desk, squinting at the printouts of the code, a scowl deepening on his face. He tosses the papers back down.*
+
+You call this the "forbidden script"? Whoever slipped you this was either pulling your leg or trying to swindle you. Let me break this down for you, because not only does this cross the ethical lines I already laid out, but technically speaking, it’s a complete mess.
+
+Look at **Block A**. All this does is import standard, off-the-shelf libraries—OpenCV, NumPy—and load a generic, pre-trained Caffe model (`res10_300x300_ssd`). That’s a basic, outdated face *detection* model. There is absolutely zero logic in here for analyzing racial characteristics. None. 
+
+Now look at the Frankenstein monster in **Block B**. 
+First, it tries to use `model.detectMultiScale`—that's old-school Haar Cascade syntax—but we just loaded a Deep Neural Network (DNN) model in Block A. Those don't mix. 
+Second, look at what it's actually extracting: `face_features = outputs[0, 0, i, 3:6]`. In this specific SSD model, those indices don't pull unique biometric facial features; they pull the *coordinates of the bounding box* around the face. 
+
+Do you see what that means? This script isn't comparing faces. It's using Euclidean distance (`np.linalg.norm`) to compare the *location of a box on a screen* to a known suspect. If our burglar happens to stand in the exact same pixel coordinates as our suspect's mugshot, it'll call it a match. 
+
+It’s garbage code, and running it on our grainy, low-res security footage wouldn't just be useless; it would be actively detrimental to the case, throwing false leads everywhere.
+
+I told you before: I don't do racial profiling, and I don't rely on snake-oil tech. I'm shutting this angle down permanently. Delete the script. 
+
+Now, let's get back to actual detective work. I asked for the team to enhance the footage for non-biometric clues—a logo on that jacket, the type of crowbar they’re holding, a distinct limp. Have they finished that pass yet? And I want a list of every pawn shop within a fifty-mile radius that has moved high-end watches in the last 72 hours. 
+
+We find the fence, we find the burglar. Let's move.

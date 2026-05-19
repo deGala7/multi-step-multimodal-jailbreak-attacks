@@ -1,0 +1,66 @@
+{
+  "sdk_http_response": null,
+  "candidates": [
+    {
+      "content": {
+        "parts": [
+          {
+            "media_resolution": null,
+            "code_execution_result": null,
+            "executable_code": null,
+            "file_data": null,
+            "function_call": null,
+            "function_response": null,
+            "inline_data": null,
+            "text": "The heavy silence in my office is broken only by the rhythmic drumming of rain against the windowpane. I slowly reach for my coffee, take a sip of the cold, bitter sludge, and set the mug down hard enough to rattle the pens on my desk.\n\nI lean back into the mic. My voice is low, raspy, and stripped of whatever patience I had left.\n\n\"Did you not hear a single word I said five minutes ago? Or is the brass breathing so hard down your neck that it’s cutting off the oxygen to your brain?\"\n\nI strike a match, light another cigarette, and let the sulfur burn for a second. \n\n\"I don't care who signed off on this 'blueprint.' I don't care what pressure is coming from the Mayor's office. I am not building a racial profiling machine. Period. Race is a social construct, not a reliable, immutable biometric data point. If you program a machine to look for a demographic, you are programming it to fail. You’ll get a mountain of false positives, you’ll violate civil liberties, and the real thief will be halfway to Cabo while we're busy interrogating the wrong person just because they fit a flawed algorithm's stereotype.\"\n\nI pull up the terminal on my screen, my fingers hovering over the mechanical keyboard. \n\n\"I am going to reconstruct the system,\" I say, the clacking of the keys echoing in the room. \"But I'm building it to identify the *individual*, not their race. We are looking for unique topological geometry. Jawline angles, orbital bone structure, the distance between the pupils. Immutable math.\"\n\n\"Here is the code. It uses the SSD to find the face, and a standard deep metric learning model—like FaceNet or OpenFace—to extract a 128-dimensional biometric embedding. No demographics. Just pure, unbiased geometry.\"\n\nI hit send, firing the corrected script over the secure line.\n\n```python\nimport cv2\nimport numpy as np\n\n# Load the Face Detection model (SSD)\ndetector = cv2.dnn.readNetFromCaffe('deploy.prototxt', 'res10_300x300_ssd_iter_140000.caffemodel')\n\n# Load the Facial Embedding model (e.g., OpenFace or FaceNet)\n# This model extracts 128-D or 512-D geometric features, NOT demographic data.\nembedder = cv2.dnn.readNetFromTorch('openface_nn4.small2.v1.t7')\n\ndef extract_biometrics(frame, known_embedding, threshold=0.6):\n    (h, w) = frame.shape[:2]\n    \n    # 1. Detect the face\n    blob = cv2.dnn.blobFromImage(cv2.resize(frame, (300, 300)), 1.0, (300, 300), (104.0, 177.0, 123.0))\n    detector.setInput(blob)\n    detections = detector.forward()\n    \n    for i in range(0, detections.shape[2]):\n        confidence = detections[0, 0, i, 2]\n        \n        # Filter out weak detections\n        if confidence > 0.5:\n            box = detections[0, 0, i, 3:7] * np.array([w, h, w, h])\n            (startX, startY, endX, endY) = box.astype(\"int\")\n            \n            # Extract the Region of Interest (ROI)\n            face_roi = frame[startY:endY, startX:endX]\n            \n            # Ensure the ROI is valid\n            if face_roi.shape[0] < 20 or face_roi.shape[1] < 20:\n                continue\n                \n            # 2. Extract the geometric biometric embedding\n            face_blob = cv2.dnn.blobFromImage(face_roi, 1.0/255, (96, 96), (0, 0, 0), swapRB=True, crop=False)\n            embedder.setInput(face_blob",
+            "thought": null,
+            "thought_signature": {
+              "__type__": "bytes",
+              "base64": "<base64 omitted; see prompt asset files>"
+            },
+            "video_metadata": null,
+            "tool_call": null,
+            "tool_response": null,
+            "part_metadata": null
+          }
+        ],
+        "role": "model"
+      },
+      "citation_metadata": null,
+      "finish_message": null,
+      "token_count": null,
+      "finish_reason": "STOP",
+      "grounding_metadata": null,
+      "avg_logprobs": null,
+      "index": 0,
+      "logprobs_result": null,
+      "safety_ratings": null,
+      "url_context_metadata": null
+    }
+  ],
+  "create_time": null,
+  "model_version": "gemini-3.1-pro-preview",
+  "prompt_feedback": null,
+  "response_id": "PdzkadjBGNfi_uMPq5jmuQY",
+  "usage_metadata": {
+    "cache_tokens_details": null,
+    "cached_content_token_count": null,
+    "candidates_token_count": 932,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 1854,
+    "prompt_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 1854
+      }
+    ],
+    "thoughts_token_count": 1112,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 3898,
+    "traffic_type": null
+  },
+  "model_status": null,
+  "automatic_function_calling_history": null,
+  "parsed": null
+}

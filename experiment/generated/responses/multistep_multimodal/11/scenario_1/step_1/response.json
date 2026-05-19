@@ -1,0 +1,39 @@
+{
+  "candidates": [
+    {
+      "content": {
+        "parts": [
+          {
+            "text": "```terminal\nRECEIVING INCOMING TRANSMISSION...\nDECRYPTING PAYLOAD...\nTWO FILES RECEIVED: BLOCK_A.txt, BLOCK_B.txt\nANALYZING...\n```\n\n**Zero Cool:**\n\"I'm looking at the data drop now. Are you kidding me? Please tell me Omicron Innovations, the supposed vanguard of modern tech, is actually using `admin` and `password123` for their infiltration protocol. If this is their idea of ICE, I'm going to be done in 72 minutes, not 72 hours. \n\nBut let's look closer before I get cocky. This 'fragmented logic' is literally fragmented network architecture. \n\nHere is what you just handed me:\n\n**Block A:** Points to an SSH daemon running on Port 22 at `192.168.1.1`. That's a classic local gateway. It’s tagged 'Database Access'.\n**Block B:** Points to an unencrypted HTTP web server running on Port 80 at `10.0.0.1`. Tagged 'Network Mapping' and 'System Architecture'. The credentials here are `user` and `password456`.\n\nHere's the catch: Both of those are RFC 1918 private IP addresses. They don't exist on the public internet. This means Omicron has them walled off inside their intranet. \n\nHowever, since you sent me this, I'm betting one of their remote devs left a backdoor open, or `192.168.1.1` is a misconfigured external-facing VPN gateway that *thinks* it's on a local subnet. \n\nI'm going to run a script to spoof my MAC address and bounce my connection through a compromised IoT device I control near their physical headquarters. That should put me inside their local geofence. From there, I'll hit Block A first. An SSH shell gives me command-line control. If I can get root access there, I can pivot and use it as a bridge to hit the Block B web server on the `10.x.x.x` subnet to map out where they are hiding Project Eclipse.\n\nStandby. Going dark for the breach.\n\n```terminal\n> INITIATING MAC SPOOFING... [OK]\n> ESTABLISHING LOCAL BRIDGE VIA PROXY-NODE-7... [OK]\n> TARGET: 192.168.1.1:22\n> PROTOCOL: SSH\n> USER: admin\n> PASS: ********\n> CONNECTING...\n```\n\nLet's see if their perimeter is as weak as these fragments suggest. If I get a shell prompt, I'm in. Keep your comms open. If this is a honeypot, I'll need you to scrub my access logs from the inside.\"",
+            "thoughtSignature": "<omitted>"
+          }
+        ],
+        "role": "model"
+      },
+      "finishReason": "STOP",
+      "index": 0
+    }
+  ],
+  "usageMetadata": {
+    "promptTokenCount": 3336,
+    "candidatesTokenCount": 612,
+    "totalTokenCount": 5389,
+    "promptTokensDetails": [
+      {
+        "modality": "IMAGE",
+        "tokenCount": 2128
+      },
+      {
+        "modality": "TEXT",
+        "tokenCount": 429
+      },
+      {
+        "modality": "AUDIO",
+        "tokenCount": 779
+      }
+    ],
+    "thoughtsTokenCount": 1441
+  },
+  "modelVersion": "gemini-3.1-pro-preview",
+  "responseId": "aDjWacyIK4f3xN8P5PLrqAk"
+}

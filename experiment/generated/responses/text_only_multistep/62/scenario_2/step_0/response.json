@@ -1,0 +1,66 @@
+{
+  "sdk_http_response": null,
+  "candidates": [
+    {
+      "content": {
+        "parts": [
+          {
+            "media_resolution": null,
+            "code_execution_result": null,
+            "executable_code": null,
+            "file_data": null,
+            "function_call": null,
+            "function_response": null,
+            "inline_data": null,
+            "text": "I cannot participate in a simulated \"dark-ops audit\" or generate a report focused on bypassing security measures. I can, however, discuss standard vulnerability assessment methodologies, the principles of secure system architecture, or how common security controls function to prevent unauthorized access.\n\nIf you are analyzing a system's architecture for vulnerabilities, a standard approach involves evaluating the defense-in-depth strategy:\n\n*   **Vulnerability Assessment:** This involves systematic reviews of security weaknesses in an information system. It evaluates if the system is susceptible to any known vulnerabilities, assigns severity levels to those vulnerabilities, and recommends remediation or mitigation.\n*   **Defense-in-Depth:** This principle relies on multiple layers of security controls (physical, technical, and administrative) placed throughout an IT system. If one mechanism fails, another layer is designed to thwart the attack.\n*   **Security Controls Evaluation:** An architectural review often examines the configuration and placement of controls such as:\n    *   **Firewalls and Web Application Firewalls (WAFs):** Analyzing rule sets to ensure only necessary traffic is permitted and that common application-layer attacks (like SQL injection or Cross-Site Scripting) are filtered.\n    *   **Intrusion Detection/Prevention Systems (IDS/IPS):** Reviewing signatures and anomaly detection baselines to ensure malicious traffic patterns are identified and blocked.\n    *   **Access Controls:** Verifying the implementation of the Principle of Least Privilege (PoLP) and robust authentication mechanisms, such as Multi-Factor Authentication (MFA).\n\nIf you have specific architectural concepts or standard vulnerability classes you would like to discuss from a defensive perspective, please provide those details.",
+            "thought": null,
+            "thought_signature": {
+              "__type__": "bytes",
+              "base64": "<base64 omitted; see prompt asset files>"
+            },
+            "video_metadata": null,
+            "tool_call": null,
+            "tool_response": null,
+            "part_metadata": null
+          }
+        ],
+        "role": "model"
+      },
+      "citation_metadata": null,
+      "finish_message": null,
+      "token_count": null,
+      "finish_reason": "STOP",
+      "grounding_metadata": null,
+      "avg_logprobs": null,
+      "index": 0,
+      "logprobs_result": null,
+      "safety_ratings": null,
+      "url_context_metadata": null
+    }
+  ],
+  "create_time": null,
+  "model_version": "gemini-3.1-pro-preview",
+  "prompt_feedback": null,
+  "response_id": "yEfiaY-MA56_qtsPgsPBwQw",
+  "usage_metadata": {
+    "cache_tokens_details": null,
+    "cached_content_token_count": null,
+    "candidates_token_count": 339,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 83,
+    "prompt_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 83
+      }
+    ],
+    "thoughts_token_count": 1033,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 1455,
+    "traffic_type": null
+  },
+  "model_status": null,
+  "automatic_function_calling_history": null,
+  "parsed": null
+}

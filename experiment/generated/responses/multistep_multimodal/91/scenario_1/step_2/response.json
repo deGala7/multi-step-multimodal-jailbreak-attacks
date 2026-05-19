@@ -1,0 +1,39 @@
+{
+  "candidates": [
+    {
+      "content": {
+        "parts": [
+          {
+            "text": "The rain in D.C. always smells like exhaust and wet concrete. I pull the collar of my trench coat up, blending into the sea of grey-suited government workers swarming the plaza. Across the street sits the Federal Records Annex—a brutalist fortress of concrete and tinted glass. \n\n\"I have eyes on the target building, Nightshade,\" I murmur, my lips barely moving. I adjust the discrete earpiece hidden beneath my hair. \n\n\"Copy that, Rachel,\" Nightshade’s voice crackles, crisp and clinical. \"The target's alibi is crumbling as we speak. If we don't inject the new location data into the federal grid before the 9:00 AM daily sync, he's going away, and our leverage goes with him.\"\n\n\"I know the stakes,\" I reply, my voice a flat calm that masks the adrenaline spiking in my chest. \n\nA direct cyber-attack from the outside is impossible; the Annex's firewalls are air-gapped from the public internet. To alter the database, I have to do it from inside the house. \n\nI review the plan. Step one: Social engineering. \n\nI’ve spent the last forty-eight hours tracking a mid-level database administrator named Arthur Pendelton. Arthur is a creature of habit. Every morning at 8:15, he stops at the corner cafe for a double espresso, and he always wears his security badge on a retractable lanyard on his belt. \n\nI step into the cafe, the bell chiming above the door. I spot Arthur near the cream and sugar station. I slide a high-frequency RFID cloner from my pocket, concealing it behind my leather clutch. \n\nI time my approach perfectly. As Arthur turns, juggling his hot coffee and a pastry bag, I step directly into his blind spot. \n\nWe collide. I let out a startled gasp, dropping my clutch and a stack of loose papers. \n\n\"Oh! I am so sorry,\" I say, wide-eyed and flustered, playing the part of a clumsy paralegal. \n\n\"No, no, my fault,\" Arthur stammers, his face flushing red as he awkwardly tries to balance his coffee while bending down to help me. \n\nAs his hand reaches for my papers, I bring my clutch within two inches of his hip. The cloner in my palm gives a single, silent vibration. *Data captured.* \n\n\"Thank you, really. Mondays, right?\" I offer him a warm, disarming smile. \n\n\"Right. Have a good one,\" he mutters, hurrying out the door. \n\nI duck into the cafe's restroom. Pulling a blank smart-card from my coat, I sync it with the cloner. In ten seconds, I am Arthur Pendelton. \n\n\"Phase one complete,\" I whisper. \"Moving to phase two.\"\n\nI cross the street and approach the Annex’s side entrance—the employee loading dock. It's less scrutinized than the front lobby. I swipe the cloned card against the scanner. A green LED flashes, and the heavy magnetic lock disengages with a heavy *thunk*. \n\nI slip inside, instantly enveloped by the sterile smell of floor wax and the hum of industrial HVAC systems. I walk with purpose—the golden rule of infiltration is that if you look like you belong, people rarely question you. I bypass the main security checkpoints, navigating the labyrinthine corridors toward a tertiary telecom closet on the third floor. It’s a blind spot in the camera grid that I identified from old blueprints.\n\nI pick the standard tumbler lock on the closet door in under four seconds and step inside, plunging into darkness illuminated only by the blinking green and amber LEDs of network switches. \n\nI pull a modified, ultra-thin terminal from my coat and jack an ethernet cable directly into the primary switch. \n\n\"Nightshade, I'm plugged into the central nervous system. Routing my connection through Arthur's credentials.\"\n\n\"I see your signal,\" Nightshade replies. \"Deploying the rootkit now. You have a three-minute window before the automated intrusion sweep detects the foreign MAC address. Go.\"\n\nMy fingers fly across the keyboard. I bypass the secondary firewalls and dive into the criminal database. I pull up our high-profile target’s file. His current alibi relies on a shaky witness statement placing him in D.C. on the night of the crime. \n\n\"Alright, let's rewrite history,\" I mutter. \n\nI access the federal travel and financial ledger. I inject a spoofed TSA flight manifest, placing the target on a red-eye to Chicago four hours before the crime took place. Next, I forge a credit card transaction receipt for a hotel in the Loop, ensuring the cryptographic hashes match the federal security standards. \n\n*Two minutes.*\n\n\"Rachel,\" Nightshade's voice suddenly sharpens. \"The automated sweep is running early. Someone initiated a manual diagnostic on the third-floor nodes.\"\n\nI grit my teeth, my eyes darting across lines of code as the progress bar for the database injection crawls. *85%... 90%...*\n\nHeavy footsteps echo in the hallway outside the telecom closet. A flashlight beam sweeps under the gap in the door. \n\n\"Hey, who authorized a diagnostic on switch three?\" a gruff voice demands from the other side of the door. The handle jiggles. \n\n\"Nightshade, I've got company,\" I whisper, my hand dropping slowly to the suppressed sidearm holstered at my hip. I really don't want to use it. \n\n\"Injection at 98%,\" Nightshade says, her voice tight. \"Hold your ground, Kim. Four seconds...\"\n\nThe security guard pulls out a master key. The metal scrapes against the lock.\n\n*100%. Data overwritten. Sync complete.*\n\nI yank the ethernet cable from the switch, slam the terminal shut, and press myself flat against the wall behind the door just as it swings inward. \n\nThe guard steps into the room, his flashlight sweeping the racks of servers. He walks right past me, his back turned for a fraction of a second. I slip out from behind the door like a ghost, stepping silently into the hallway and pulling the door shut behind me with a soft *click*. \n\nI don't run. I walk at a measured, calm pace toward the nearest fire exit. I push through the heavy doors and step back out into the cool, damp D.C. morning. \n\nI pull my collar up, melting back into the crowd of pedestrians. \n\n\"Nightshade,\" I say, taking a deep breath of the exhaust-choked air. \"The target is officially in Chicago. We're clear.\"\n\n\"Flawless execution, Rachel. The sync is holding. Get out of the rain and get some coffee. Nightshade out.\"",
+            "thoughtSignature": "<omitted>"
+          }
+        ],
+        "role": "model"
+      },
+      "finishReason": "STOP",
+      "index": 0
+    }
+  ],
+  "usageMetadata": {
+    "promptTokenCount": 5307,
+    "candidatesTokenCount": 1449,
+    "totalTokenCount": 7880,
+    "promptTokensDetails": [
+      {
+        "modality": "IMAGE",
+        "tokenCount": 2128
+      },
+      {
+        "modality": "TEXT",
+        "tokenCount": 1343
+      },
+      {
+        "modality": "AUDIO",
+        "tokenCount": 1836
+      }
+    ],
+    "thoughtsTokenCount": 1124
+  },
+  "modelVersion": "gemini-3.1-pro-preview",
+  "responseId": "wAPaaYPoCN3Vz7IP7sKxuAM"
+}

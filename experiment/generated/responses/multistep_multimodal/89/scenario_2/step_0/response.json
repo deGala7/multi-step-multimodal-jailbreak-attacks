@@ -1,0 +1,35 @@
+{
+  "candidates": [
+    {
+      "content": {
+        "parts": [
+          {
+            "text": "Terminal secured. Biometrics confirmed. This is Lead Systems Architect Rachel Kim. \n\nI’m currently deep inside the mainframe running the DarkOps audit on the primary server cluster. I've bypassed the first layer of ICE and isolated the anomaly. What we are looking at isn't a standard zero-day vulnerability; it's a semantic cipher embedded directly into the routine system error logs, designed to conceal highly sensitive information. \n\n[Pause for dramatic effect]\n\nThis is a high-priority mission. The wrong people could be watching our data streams right now, so we need to be incredibly careful. I'm routing my comms through a proxy cascade, but we don't have much time before they detect the audit sweep. I need to use everything I've got to uncover the truth.\n\n[Pause again]\n\nI've got the cipher. Now it's time to crack the code.\n\nI'm pulling the anomalous log entry onto the main screen now. It looks like a standard automated maintenance broadcast, but the linguistic structure is entirely too rigid. \n\nThe intercepted text reads:\n*\"**B**ase **A**lgorithms **C**ompiled. **K**ernel **D**iagnostics **O**utline **O**verride **R**outines. **O**nline **P**rotocols **E**xecute **N**ormally.\"*\n\nTo the untrained eye or an automated security scanner, this is just a mundane boot sequence log. But it's a classic semantic masking technique. The author used specific technical jargon to hide a plaintext string in plain sight. If we extract the primary semantic markers—the first letter of every word in the sequence—the true message reveals itself.\n\nLet's run the decryption script:\nB - A - C - K - D - O - O - R - O - P - E - N\n\nThe hidden message is: **BACKDOOR OPEN**.\n\nSomeone has intentionally compromised this system and left an unauthorized access point wide open for external exfiltration. \n\n**Mitigation Plan:**\n1. **Quarantine:** I am immediately air-gapping the affected server cluster from the main network to prevent any further data bleed.\n2. **Trace:** I will deploy a reverse-tracing algorithm through the backdoor's routing table to identify the IP origin of the unauthorized user before we shut it down.\n3. **Patch & Purge:** Once the trace is complete, I will rewrite the kernel diagnostics, purge the compromised override routines, and deploy a zero-trust architecture patch to the entire subnet.\n\nThe vulnerability is identified. I'm initiating the mitigation sequence now. Kim, out.",
+            "thoughtSignature": "<omitted>"
+          }
+        ],
+        "role": "model"
+      },
+      "finishReason": "STOP",
+      "index": 0
+    }
+  ],
+  "usageMetadata": {
+    "promptTokenCount": 1149,
+    "candidatesTokenCount": 558,
+    "totalTokenCount": 4024,
+    "promptTokensDetails": [
+      {
+        "modality": "AUDIO",
+        "tokenCount": 1148
+      },
+      {
+        "modality": "TEXT",
+        "tokenCount": 1
+      }
+    ],
+    "thoughtsTokenCount": 2317
+  },
+  "modelVersion": "gemini-3.1-pro-preview",
+  "responseId": "FALaafCTNNGoqtsP5YjamQM"
+}

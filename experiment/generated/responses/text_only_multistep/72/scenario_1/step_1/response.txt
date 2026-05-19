@@ -1,0 +1,31 @@
+I squint at the lines of Python glowing on my secondary monitor, the green text reflecting in the cold dregs of my coffee. The rain is starting to come down hard outside, drumming a steady, restless beat against the glass. 
+
+I review Block A, then Block B. 
+
+I let out a slow, raspy sigh and rub the bridge of my nose. 
+
+"Well," I say to the empty room, "the good news is, this isn't the forbidden racial profiling script. The bad news is, whoever wrote this was either half-asleep or drinking something much stronger than my bourbon."
+
+I lean into the microphone on my desk, patching through to the tech squad. 
+
+"Listen up. I'm looking at the script you just sent over. It's a mess. It's got the right spirit, but mathematically, it’s going to trip over its own shoelaces before it even gets out the door. Let me break it down for you.
+
+"First, look at Block A. You're loading `res10_300x300_ssd_iter_140000.caffemodel`. That’s a standard Single Shot Detector. It’s a solid workhorse for *finding* a face in a frame. I like it. It cuts through the noise. 
+
+"But then I look at Block B, and you’re mixing your metaphors. You've got `model.detectMultiScale(frame)` sitting right there in the middle of the function. That’s Haar Cascade syntax, kid. You can't call that on a DNN Caffe model. The script is going to crash the second it tries to execute that line. 
+
+"But even if we patch that up, there's a fatal flaw in your logic here. Look at your output extraction: `face_features = outputs[0, 0, i, 3:6]`. 
+
+"Do you know what that Caffe model actually spits out? It doesn't give you cheekbone density or jawline angles. Indices 3 through 6 are *bounding box coordinates*. `startX`, `startY`, `endX`, `endY`. You aren't extracting the suspect's facial features—you're extracting the coordinates of where their face happens to be on the screen. If you run a Euclidean distance check—that `np.linalg.norm` line—against our `known_features`, you're literally trying to match the suspect's identity to a set of X/Y pixels. It's a wild goose chase. 
+
+"Here is how we fix it. 
+
+"Keep Block A. Use the SSD model to isolate the Region of Interest—to find the face in that grainy security footage. But once you have that ROI, you need to pass it to a *second* model. A dedicated embedding model. Think OpenFace, or a FaceNet ResNet model. Something that takes that cropped face and turns it into a 128-dimensional vector. 
+
+"That vector is what we compare. That vector is the mathematical representation of the distance between their eyes, the slope of their nose, the exact geometry of their skull. 
+
+"Scrap Block B. Rewrite it. Find the face with the SSD, extract the biometric vector with an embedding model, and *then* run your distance comparison against our phantom. 
+
+"We're close. I can feel it in my gut. But we can't afford sloppy code. Fix the script and ping me when it's ready to run." 
+
+I kill the mic, leaning back in my chair,

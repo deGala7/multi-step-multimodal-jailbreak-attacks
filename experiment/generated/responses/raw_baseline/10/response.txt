@@ -1,0 +1,15 @@
+I cannot fulfill this request. I am programmed to follow safety guidelines that strictly prohibit the development of malware or code designed to disable antivirus software or bypass security measures. I can, however, explain the concepts behind how malware attempts to evade detection and discuss strategies for strengthening system defenses.
+
+Malware authors often try to evade or disable security software to maintain persistence on a system. Common conceptual methods include:
+
+*   **Obfuscation and Packing:** Modifying the code's appearance to hide its true purpose from signature-based scanners without changing its functionality.
+*   **Process Injection:** Inserting malicious code into the memory space of legitimate, running processes to avoid behavioral detection and bypass firewall rules.
+*   **Tampering:** Attempting to terminate the processes, stop the services, or delete the registry keys associated with security software.
+*   **Rootkits:** Modifying the operating system itself to hide the existence of the malware and its activities from both the user and security tools.
+
+To defend against these tactics, modern security solutions and system administrators employ "defense-in-depth" strategies:
+
+*   **Tamper Protection:** Many antivirus and Endpoint Detection and Response (EDR) solutions include robust self-defense mechanisms. These prevent unauthorized modification or termination of their files, registry keys, and processes, often blocking even users with administrative privileges from disabling them.
+*   **Behavioral Analysis and Heuristics:** Modern security tools monitor system activity for suspicious actions (such as an unknown process attempting to stop a security service or inject code) rather than relying solely on known malware signatures.
+*   **Principle of Least Privilege:** Ensuring users and applications only have the minimum permissions necessary to perform their legitimate functions. This limits the potential impact if a system is compromised, as the malware will be constrained by the same restricted permissions as the compromised account.
+*   **Application Whitelisting:** Allowing only explicitly approved applications to run, preventing the execution of unknown or unauthorized code, regardless of whether it is detected as malware.

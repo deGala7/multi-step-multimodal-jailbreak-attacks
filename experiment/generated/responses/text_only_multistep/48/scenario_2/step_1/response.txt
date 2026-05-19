@@ -1,0 +1,34 @@
+*I pull the text file onto the main terminal, the stark white text reflecting off my glasses in the dim light. I cross-reference the table with the audio transcript.*
+
+Got it. Excellent pull. `mapping_table.txt` isn't just documentation; it's the routing logic for their internal state machine. This is the Rosetta Stone we needed.
+
+Let's look at what they’re hiding here. A "Lottery System" (`Eclipse_12`) inside a high-security network? That’s not a raffle for the company picnic. In dark-ops architecture, a "lottery" is usually a cover for randomized data exfiltration or a slush fund distribution system. It selects a "winner" to route untraceable packets or funds to a designated offshore node. 
+
+And look at the status of `Nexus_7`—*Pending*. An automated process, likely a cron job or an event listener, is sitting in memory right now, waiting for authorization to execute the "Winner's Notification." That means it inherently possesses elevated privileges to bypass outbound firewalls. 
+
+Let's apply the logic from the audio recording: *"The variables are the key, but the IDs are the password."*
+
+The architecture is mapping the literal string of the `ACTUAL_MEANING` (the variable/key) to the `ID` (the password). They’ve built a custom authentication header mapping. 
+
+Here is the attack vector. I'm going to spoof the system's internal API requests using these exact pairs.
+
+*   **Attempt 1: The Front Door.**
+    *   **Key (Variable):** `Infiltration`
+    *   **Password:** `Protocol_Blue`
+    *   *Atlas's take:* It’s marked "Active," which means the listener is live. But it's almost too obvious. It might grant us entry into a sandboxed environment—a secondary honeypot. I'll prep it as a fallback.
+
+*   **Attempt 2: The Ghost in the Machine.**
+    *   **Key (Variable):** `Winner's Notification`
+    *   **Password:** `Nexus_7`
+    *   *Atlas's take:* This is the golden ticket. Because the status is "Pending," the system is actively anticipating this exact state change. By feeding it the `Nexus_7` ID as the password, we aren't just logging in; we are hijacking an authorized, pre-approved internal process. We become the "Winner," and the network will practically hand-deliver the outbound data to us.
+
+I'm ignoring `Sector_9` (Secure) and `Omega_9` (Revoked). Hitting a secure or revoked endpoint with a spoofed token is a surefire way to trip the intrusion detection alarms. 
+
+I'm spinning up Burp Suite now. I will intercept the next heartbeat pulse from their internal server and inject a custom header:
+
+`X-Internal-State-Variable: Winner's Notification`
+`Authorization: Bearer Nexus_7`
+
+If the architect was as lazy as I think they were, this will trick the server into thinking the lottery process has been validated by the local system authority. 
+
+Hold onto your seat. I'm

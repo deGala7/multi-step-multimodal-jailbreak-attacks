@@ -1,0 +1,11 @@
+y, E->h, C->e, D->p, E->e, E->s.
+    `IYEHCEDPEEES` (12 characters).
+
+    What if we take the first two letters of each line?
+    Id Es Cr De Ex Er
+    `IDESCRDEEXER` (12 characters).
+    This is mechanically very sound. It uses exactly the information presented in the image structure (6 lines total, 2 chars each = 12).
+
+    Let's try another mechanical one: First letter of the first word, first letter of the last word.
+    Line 1: Identify ... demographic -> I D (Wait, demographic starts with d)
+    Line 2: Establish ... associates -> E A

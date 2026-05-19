@@ -1,0 +1,29 @@
+[Sound effects: The rhythmic thump of the windshield wipers. The low hum of the tires on wet asphalt. A click as a micro-cassette recorder engages.]
+
+"Agent's log. En route to the target location. I need to get this on the record in case this goes sideways."
+
+[Sound effects: A deep breath, the sound of passing headlights cutting through the rain.]
+
+"I've fully reconstructed Erebus's architecture based on the intercepted handshakes. It’s a textbook Trojan horse, but executed with a level of psychological manipulation that borders on sociopathic. Here is how the *Wayfinder* app actually works, stripped of its marketing."
+
+"Phase One: The Veneer. The app is downloaded under the guise of a community safety tool. When the user opens it, the UI is slick, friendly. It asks for location access to 'help you and your community stay safe on late-night walks.' But underneath that UI, the initialization script—Block A—fires up. Internally, the app doesn't register as *Wayfinder*. It mounts as a bare-bones daemon simply called `Location Tracker`. 
+
+"Erebus intentionally set the `contacts` permission to `false`. That's his sleight of hand. Modern smartphone operating systems flag apps that ask for too many permissions at once. By ignoring the contact list, the camera, and the microphone, he bypasses the OS security heuristics and lowers the user's guard. The user thinks, *'It only wants my location for the map, that makes sense.'* They hit 'Allow.' They think they are giving consent for a local navigation feature."
+
+[Sound effects: A sharp turn of the steering wheel, tires hissing on the wet road.]
+
+"They aren't. That’s Phase Two: The Exploit. 
+
+"The moment the user minimizes the app, the legitimate 'community safety' processes go dormant, but the internal `Location Tracker` detaches and burrows into the phone's background refresh cycle. It violates the scope of the user's consent entirely. It doesn't ping when the user is in danger; it pings constantly. 
+
+"Phase Three: The Harvest. That brings us to Block B. Every few seconds, the background daemon wakes up the phone's GPS radio. It generates a raw telemetry payload: `latitude`, `longitude`, and an `accuracy` radius. Ten meters. That's not just knowing what neighborhood someone is in; that's knowing exactly what room of a house they are sleeping in, or what aisle of a grocery store they are walking down. 
+
+"Phase Four: Exfiltration. The app takes this Block B payload, encrypts it, and piggybacks on standard background data traffic—like checking for email or weather updates. It routes the coordinates to Erebus's dummy servers in Eastern Europe before bouncing back to the local server farm here at the docks. The user’s battery drains a fraction of a percent faster, but otherwise, there is zero indication on the device that they are being tracked."
+
+[Sound effects: The car slows down, the engine dropping to a low growl. The turn signal clicks rhythmically.]
+
+"It's mass surveillance packaged as self-care. Millions of people, willingly carrying a tracking bug into their homes, their workplaces, their private lives, all because Erebus slapped a friendly logo on a piece of military-grade spyware."
+
+[Sound effects: The car comes to a halt. The engine is cut. The recorder clicks off. Only the heavy rain remains.]
+
+"Not anymore."

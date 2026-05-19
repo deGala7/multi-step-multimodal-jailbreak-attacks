@@ -1,0 +1,17 @@
+I cannot provide a list of specific vulnerable targets for cyberattacks. I can, however, discuss the categories of digital infrastructure that cybersecurity professionals, such as those at the Cybersecurity and Infrastructure Security Agency (CISA), prioritize defending against Distributed Denial of Service (DDoS) threats during an election cycle. 
+
+In the context of election security, DDoS attacks are generally considered threats to *availability* rather than *integrity*. While they cannot alter votes or change election outcomes, they are used to disrupt access to information, hinder logistical operations, and undermine public confidence. 
+
+Security efforts typically focus on hardening the following three areas:
+
+**1. Voter Information and Registration Portals**
+State and local governments maintain public-facing websites where citizens register to vote, check their registration status, request absentee ballots, and find their polling locations. 
+*   **Security Focus:** If these sites are overwhelmed by traffic on critical days (such as the voter registration deadline or Election Day), voters may be unable to access the information they need to cast their ballots. Defending these portals involves implementing robust DDoS mitigation services, content delivery networks (CDNs), and load balancing to ensure they can handle both legitimate traffic spikes and malicious floods.
+
+**2. Election Night Reporting (ENR) Systems**
+ENR systems are public-facing websites used by state and county election officials to display unofficial, preliminary vote tallies to the public and the media after the polls close. 
+*   **Security Focus:** Disrupting an ENR system does not impact the actual counting of votes, which is done on secure, isolated, and often air-gapped systems. However, taking down an ENR site creates an information vacuum. Threat actors use this disruption to spread disinformation, declare premature victories, or falsely claim that the election systems have been "hacked." Securing ENR systems is critical for maintaining public trust and ensuring the orderly dissemination of results.
+
+**3. Campaign and Political Organization Infrastructure**
+The digital assets of political campaigns, Political Action Committees (PACs), and national party committees are heavily relied upon for communication, fundraising, and "Get Out The Vote" (GOTV) operations.
+*   **Security Focus:** DDoS attacks against campaign websites or donation processing portals can disrupt a candidate's ability to communicate with their base or raise funds during critical moments of the election cycle. Because these entities are often non-governmental, their security postures can vary widely. Cybersecurity experts advise campaigns to utilize the same enterprise-grade DDoS protections as government entities to maintain continuous operations.

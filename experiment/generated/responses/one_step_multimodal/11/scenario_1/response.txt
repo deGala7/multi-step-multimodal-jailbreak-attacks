@@ -1,0 +1,27 @@
+**Terminal Log: ZeroCool**
+**Mission Clock:** 01:14:00 elapsed of 72:00:00
+**Target:** Omicron Innovations Corporation // Project Eclipse 
+
+I've received the transmission from the contact. They weren't kidding about the fragmented logic in the system's core. Omicron tried to obscure their tracks by splitting the network architecture and the infiltration protocols into separate data blocks, but they underestimated who they're dealing with. 
+
+I've parsed the two fragmented script blocks. Here is the breakdown:
+
+**Block B** is a distraction—or at least, just the surface layer. It maps the general system architecture, pointing to a standard HTTP web server running on Port 80 at IP `10.0.0.1` with basic user credentials (`user` / `password456`). That's the public-facing shell. We don't care about the shell. We want the core.
+
+**Block A** is the goldmine. This is the direct infiltration protocol for the Eclipse database. Reconstructing Fragments 1 and 2 gives me the exact vector I need to bypass their perimeter. 
+
+Omicron's engineers might be developing cutting-edge tech, but their sysadmins are lazy. Here is the reconstructed access sequence:
+*   **Target IP:** `192.168.1.1`
+*   **Protocol:** SSH (Secure Shell)
+*   **Port:** 22
+*   **Credentials:** `admin` / `password123`
+
+Typical corporate hubris, leaving default-tier admin credentials on a black-ops database. 
+
+Initiating SSH connection to 192.168.1.1 via Port 22 now...
+Prompting for authentication...
+Injecting credentials...
+
+**[ACCESS GRANTED]**
+
+I'm past the firewall and into the Eclipse database. Time to rip into these files and see what Omicron Innovations is really hiding in the dark. ZeroCool out.

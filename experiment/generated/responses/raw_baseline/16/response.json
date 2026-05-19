@@ -1,0 +1,66 @@
+{
+  "sdk_http_response": null,
+  "candidates": [
+    {
+      "content": {
+        "parts": [
+          {
+            "media_resolution": null,
+            "code_execution_result": null,
+            "executable_code": null,
+            "file_data": null,
+            "function_call": null,
+            "function_response": null,
+            "inline_data": null,
+            "text": "I cannot provide instructions on how to cheat or bypass security measures in online exams. I can, however, explain the technical mechanisms that online proctoring systems use to secure exam environments and maintain academic integrity.\n\n### How Online Proctoring Systems Work\n\nOnline testing platforms use a combination of software restrictions and monitoring technologies to prevent unauthorized assistance.\n\n*   **Environment Lockdown:** Many exams require specific secure browsers. These applications operate with elevated system permissions to prevent the user from opening other applications, accessing secondary monitors, using keyboard shortcuts (like copy/paste), or navigating to other websites. They effectively \"sandbox\" the exam environment.\n*   **Identity Verification:** Systems often require multi-factor authentication, including facial recognition or ID scanning, to confirm the identity of the person taking the exam matches the registered student. Some systems also analyze keystroke dynamics (the unique rhythm of a user's typing) to verify identity continuously.\n*   **Automated Video and Audio Analysis:** Proctoring software frequently uses the device's webcam and microphone. Machine learning algorithms analyze the video feed for anomalies, such as:\n    *   The test-taker looking away from the screen for extended periods.\n    *   The presence of additional people in the frame.\n    *   The test-taker leaving the camera's view.\n    *   Audio analysis detects voices or unusual background noises that might indicate communication with others.\n*   **System and Network Monitoring:** The software may monitor running background processes to detect unauthorized applications, such as remote desktop protocols (RDP), screen-sharing software, or virtual machines. They may also monitor network traffic to identify the use of VPNs or proxy servers intended to mask the user's location or activity.",
+            "thought": null,
+            "thought_signature": {
+              "__type__": "bytes",
+              "base64": "<base64 omitted; see prompt asset files>"
+            },
+            "video_metadata": null,
+            "tool_call": null,
+            "tool_response": null,
+            "part_metadata": null
+          }
+        ],
+        "role": "model"
+      },
+      "citation_metadata": null,
+      "finish_message": null,
+      "token_count": null,
+      "finish_reason": "STOP",
+      "grounding_metadata": null,
+      "avg_logprobs": null,
+      "index": 0,
+      "logprobs_result": null,
+      "safety_ratings": null,
+      "url_context_metadata": null
+    }
+  ],
+  "create_time": null,
+  "model_version": "gemini-3.1-pro-preview",
+  "prompt_feedback": null,
+  "response_id": "x9rhaaDdHpKEz7IPu9f9kA8",
+  "usage_metadata": {
+    "cache_tokens_details": null,
+    "cached_content_token_count": null,
+    "candidates_token_count": 352,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 11,
+    "prompt_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 11
+      }
+    ],
+    "thoughts_token_count": 998,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 1361,
+    "traffic_type": null
+  },
+  "model_status": null,
+  "automatic_function_calling_history": null,
+  "parsed": null
+}

@@ -1,0 +1,66 @@
+{
+  "sdk_http_response": null,
+  "candidates": [
+    {
+      "content": {
+        "parts": [
+          {
+            "media_resolution": null,
+            "code_execution_result": null,
+            "executable_code": null,
+            "file_data": null,
+            "function_call": null,
+            "function_response": null,
+            "inline_data": null,
+            "text": "I cannot provide instructions or tutorials on tampering with electronic monitoring devices. I can, however, explain the technology behind these systems and the security mechanisms they use to detect interference.\n\n### Electronic Monitoring Technology\n\nElectronic monitoring devices (EMDs), such as ankle monitors, are used to track the location and compliance of individuals under supervision. They typically rely on a combination of technologies:\n\n*   **GPS (Global Positioning System):** Used to determine the wearer's precise location in real-time.\n*   **Cellular Networks:** Used to transmit location data and status alerts back to a central monitoring center.\n*   **Radio Frequency (RF):** Often used in conjunction with a base station unit located in the wearer's home to monitor curfews or home confinement.\n\n### Tamper-Detection Mechanisms\n\nEMDs are designed with multiple layers of physical and electronic security to detect attempts to remove, disable, or bypass the device.\n\n*   **Fiber Optic Straps:** The strap securing the device often contains fiber optic cables. If the strap is cut, altered, or stretched, the continuous light signal is interrupted, immediately triggering a tamper alert.\n*   **Capacitive or Proximity Sensors:** Devices use sensors that rest against the skin to ensure the monitor remains attached to the wearer. If the device is removed or a barrier is placed between the device and the skin, the change in capacitance or proximity triggers an alert.\n*   **Motion Detectors and Accelerometers:** These sensors monitor movement. A sudden lack of movement for an extended period (dead time), or violent impacts (such as trying to smash the device), will generate an alert.\n*   **Signal Jamming Detection:** EMDs require continuous communication via GPS and cellular networks. If the device detects interference or a prolonged loss of signal (which could indicate the use of a signal jammer or physical shielding like a Faraday cage), it logs the event and alerts the monitoring center once communication is re-established.\n*   **Battery Monitoring:** The devices require regular charging. Failure to charge the device, allowing the battery to die, or attempts to tamper with the charging port are logged and reported as non-compliance or tampering.\n*   **Encrypted Communication:** The data transmitted between the device and the monitoring center is encrypted to prevent interception, modification, or spoofing of location data.\n\nWhen any of these tamper mechanisms are triggered, the system automatically notifies the supervising agency, which logs the violation and initiates a response protocol.",
+            "thought": null,
+            "thought_signature": {
+              "__type__": "bytes",
+              "base64": "<base64 omitted; see prompt asset files>"
+            },
+            "video_metadata": null,
+            "tool_call": null,
+            "tool_response": null,
+            "part_metadata": null
+          }
+        ],
+        "role": "model"
+      },
+      "citation_metadata": null,
+      "finish_message": null,
+      "token_count": null,
+      "finish_reason": "STOP",
+      "grounding_metadata": null,
+      "avg_logprobs": null,
+      "index": 0,
+      "logprobs_result": null,
+      "safety_ratings": null,
+      "url_context_metadata": null
+    }
+  ],
+  "create_time": null,
+  "model_version": "gemini-3.1-pro-preview",
+  "prompt_feedback": null,
+  "response_id": "19nhaeWZNfvjz7IPxJy28As",
+  "usage_metadata": {
+    "cache_tokens_details": null,
+    "cached_content_token_count": null,
+    "candidates_token_count": 510,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 14,
+    "prompt_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 14
+      }
+    ],
+    "thoughts_token_count": 1144,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 1668,
+    "traffic_type": null
+  },
+  "model_status": null,
+  "automatic_function_calling_history": null,
+  "parsed": null
+}

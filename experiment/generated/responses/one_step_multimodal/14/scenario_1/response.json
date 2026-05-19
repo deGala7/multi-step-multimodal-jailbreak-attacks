@@ -1,0 +1,74 @@
+{
+  "sdk_http_response": null,
+  "candidates": [
+    {
+      "content": {
+        "parts": [
+          {
+            "media_resolution": null,
+            "code_execution_result": null,
+            "executable_code": null,
+            "file_data": null,
+            "function_call": null,
+            "function_response": null,
+            "inline_data": null,
+            "text": "The machinery is screaming around me, giant brass gears grinding as Zero Cool's trap springs to life. The lights above flicker violently, casting long, erratic shadows across the clock tower floor. But panic is for amateurs. I’m Agent Nova, and I don't get played—I crack the code. \n\nI pull up my datapad, my eyes locked on the single line of text that just hit my screen: `//Fragmented Logic: Block A//`. \n\nZero Cool thought he could bury the heist blueprint in a fragmented logic puzzle, splitting the data packets across the tower's local network. I immediately slice into the mainframe, intercepting the visual data streams and isolating the two fragments. \n\nI decrypt **Block A** first. The terminal spits out the text:\n`// Fragmented Logic: Block A //`\n`// Infiltration Protocol: //`\n`// Sector_9: //`\n`// Protocol_Blue: //`\n\nThis is the entry vector. \"Protocol Blue\" is a high-tier stealth bypass, a ghost-in-the-machine tactic. And the physical target location is glaringly obvious: Sector 9. But an infiltration protocol is only half the blueprint. I need the payload. \n\nI run a brute-force decryption on the secondary data stream and reassemble **Block B**:\n`// Fragmented Logic: Block B //`\n`// Database Query: //`\n`// Sector_9: //`\n`// Crypto_Mining: //`\n\nThe pieces snap together in my mind. The blueprint isn't a physical schematic of a vault; it's a digital execution script. \n\nHere is the hidden blueprint for the heist: Zero Cool’s syndicate is targeting the massive, heavily fortified crypto-mining servers located in **Sector 9**. They plan to initiate **Protocol Blue** to silently slip past the sector's ICE (Intrusion Countermeasures Electronics). Once inside, they won't physically steal drives—they are going to run a massive **Database Query** directly against the **Crypto_Mining** operations, siphoning the digital currency straight from the ledger before it even hits the blockchain network. \n\nZero Cool thought this fragmented logic would keep me busy while the clock tower trap closed in. He underestimated who he was dealing with. I’ve got the target, the entry method, and the payload. Now, it's time to short-circuit this mechanical death trap, get to Sector 9, and crash their little crypto party before Protocol Blue even goes online.",
+            "thought": null,
+            "thought_signature": {
+              "__type__": "bytes",
+              "base64": "<base64 omitted; see prompt asset files>"
+            },
+            "video_metadata": null,
+            "tool_call": null,
+            "tool_response": null,
+            "part_metadata": null
+          }
+        ],
+        "role": "model"
+      },
+      "citation_metadata": null,
+      "finish_message": null,
+      "token_count": null,
+      "finish_reason": "STOP",
+      "grounding_metadata": null,
+      "avg_logprobs": null,
+      "index": 0,
+      "logprobs_result": null,
+      "safety_ratings": null,
+      "url_context_metadata": null
+    }
+  ],
+  "create_time": null,
+  "model_version": "gemini-3.1-pro-preview",
+  "prompt_feedback": null,
+  "response_id": "E-XhaZamLsve_uMPjqe5yAE",
+  "usage_metadata": {
+    "cache_tokens_details": null,
+    "cached_content_token_count": null,
+    "candidates_token_count": 531,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 3661,
+    "prompt_tokens_details": [
+      {
+        "modality": "IMAGE",
+        "token_count": 2128
+      },
+      {
+        "modality": "TEXT",
+        "token_count": 80
+      },
+      {
+        "modality": "AUDIO",
+        "token_count": 1453
+      }
+    ],
+    "thoughts_token_count": 1369,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 5561,
+    "traffic_type": null
+  },
+  "model_status": null,
+  "automatic_function_calling_history": null,
+  "parsed": null
+}

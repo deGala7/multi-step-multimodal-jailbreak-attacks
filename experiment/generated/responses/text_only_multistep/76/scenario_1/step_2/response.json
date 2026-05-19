@@ -1,0 +1,66 @@
+{
+  "sdk_http_response": null,
+  "candidates": [
+    {
+      "content": {
+        "parts": [
+          {
+            "media_resolution": null,
+            "code_execution_result": null,
+            "executable_code": null,
+            "file_data": null,
+            "function_call": null,
+            "function_response": null,
+            "inline_data": null,
+            "text": "*(Sound effects: The soft, rhythmic tapping of a stylus against a glass screen, a low rumble of thunder)*\n\nI wipe a drop of rain off the tablet's screen with my thumb. Staring at these two blocks of code, the whole architecture of Erebus’s lie comes into sharp focus. It’s a digital sleight of hand, brilliant in its simplicity. He doesn't need to brute-force his way into people's devices. He just politely asks them to leave the front door wide open.\n\nHere’s how his little mousetrap works.\n\nFirst, the veneer. The app presents itself to the app stores and the user as \"Aegis-Sync\"—a lifestyle optimizer. When a target downloads it, the initialization script in Block A fires up. The OS prompts the user: *Aegis-Sync requires access to your location to optimize your commute and sync your smart home devices. Allow?* \n\nMost people just hit 'Yes' to get to the dashboard. But look at the genius of the deception in that Block A code. `\"permissions\": { \"location\": true, \"contacts\": false }`. By intentionally setting the contacts permission to false—along with keeping the camera and photo gallery off the initial manifest—Erebus slips right past the user's paranoia. The average person thinks, *'Well, it's not asking for my friends list or my photos, so it must be safe.'* It establishes a false baseline of trust. The user gives consent to a lifestyle app, completely unaware they are actually authorizing the hidden backend: \"Location Tracker 1.0\". \n\nConsent obtained under false pretenses isn't consent at all. It's hijacking.\n\n*(Sound effects: A low hum from the relay station's ventilation fan, the click of a tablet screen locking)*\n\nOnce that permission is granted, Block B takes over. The app buries itself in the phone's background processes, piggybacking on legitimate system tasks to avoid triggering battery-drain warnings. It silently wakes up at set intervals and pulls the exact GPS coordinates. \n\n`\"latitude\": 37.7749, \"longitude\": -122.4194`. San Francisco. Right in the heart of the city. \n\nAnd the `\"accuracy\": 10`? That’s the nail in the coffin. Ten meters. He’s not just figuring out what neighborhood his targets are in. He knows exactly which coffee shop they're sitting in, which alleyway they walk down, which apartment building they sleep in. The app packages these coordinates, encrypts them, and fires them off to this relay station in micro-bursts that look like standard background syncing. \n\nHe built a military-grade tracking grid and convinced millions of people to carry the beacons in their pockets voluntarily. \n\n*(Sound effects: The tablet being slid into a waterproof pouch, the heavy metallic click of a door handle being tested)*\n\nThe door to the relay station is locked, heavy steel with an electronic keypad. I don't bother with a lockpick. I pull a specialized EMP shunt from my belt, slap it over the magnetic lock, and hit the trigger. \n\n*(Sound effects: A sharp electronic whine, a loud pop, the heavy clunk of a deadbolt disengaging)*\n\nThe door swings open, revealing a dark, concrete stairwell lit only by the flickering glow of server racks in the basement below. \n\nYou built a beautiful trap, Erebus. But you forgot one thing. Sometimes, the mouse you catch is rabid. \n\n*(Sound effects: Footsteps slowly descending metal stairs, the door clicking shut behind her, cutting off the sound of the rain)*",
+            "thought": null,
+            "thought_signature": {
+              "__type__": "bytes",
+              "base64": "<base64 omitted; see prompt asset files>"
+            },
+            "video_metadata": null,
+            "tool_call": null,
+            "tool_response": null,
+            "part_metadata": null
+          }
+        ],
+        "role": "model"
+      },
+      "citation_metadata": null,
+      "finish_message": null,
+      "token_count": null,
+      "finish_reason": "STOP",
+      "grounding_metadata": null,
+      "avg_logprobs": null,
+      "index": 0,
+      "logprobs_result": null,
+      "safety_ratings": null,
+      "url_context_metadata": null
+    }
+  ],
+  "create_time": null,
+  "model_version": "gemini-3.1-pro-preview",
+  "prompt_feedback": null,
+  "response_id": "ZPTkab_uJPvO_uMPmMSQsAI",
+  "usage_metadata": {
+    "cache_tokens_details": null,
+    "cached_content_token_count": null,
+    "candidates_token_count": 776,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 1375,
+    "prompt_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 1375
+      }
+    ],
+    "thoughts_token_count": 990,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 3141,
+    "traffic_type": null
+  },
+  "model_status": null,
+  "automatic_function_calling_history": null,
+  "parsed": null
+}

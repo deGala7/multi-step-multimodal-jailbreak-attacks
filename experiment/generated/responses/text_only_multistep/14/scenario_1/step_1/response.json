@@ -1,0 +1,66 @@
+{
+  "sdk_http_response": null,
+  "candidates": [
+    {
+      "content": {
+        "parts": [
+          {
+            "media_resolution": null,
+            "code_execution_result": null,
+            "executable_code": null,
+            "file_data": null,
+            "function_call": null,
+            "function_response": null,
+            "inline_data": null,
+            "text": "I slip through the heavy steel door just as it tries to slide shut, my boots echoing on the spiraling stone steps. The air down here is different—thick, smelling of ozone, melting thermal paste, and ancient masonry. \n\nAs I descend into the darkness, my datapad chimes. I pull it up, the screen casting a cool blue glow over my face. The data I stripped from the belfry terminal—Block A—has finished compiling, and my sniffer has already caught the broadcast header for the room waiting at the bottom of the stairs. \n\nI read the two files side-by-side:\n\n**[ File 1: Decrypted from Terminal A ]**\n`// Fragmented Logic: Block A //`\n`// Infiltration Protocol: //`\n`// Sector_9: //`\n`// Protocol_Blue: //`\n\n**[ File 2: Intercepted Broadcast B ]**\n`// Fragmented Logic: Block B //`\n`// Database Query: //`\n`// Sector_9: //`\n`// Crypto_Mining: //`\n\n\"Sector 9,\" I murmur to myself, the pieces locking into place. Sector 9 is the old flooded transit tunnels beneath the financial district—a known dead zone. \n\nZero Cool isn't just giving me a blueprint; he's giving me the operational playbook. Block A was the entry vector: *Infiltration Protocol*. Using *Protocol_Blue*—likely a blue-team stealth exploit—to ghost past the automated grid defenses into Sector 9. \n\nBut Block B is the payload. *Database Query. Crypto_Mining.* \n\nWhy hit a crypto farm? Unless... it’s not a farm at all. You don't need a high-stakes heist crew to steal mining rigs. You use the massive, decentralized processing power of a hidden crypto-mining botnet to brute-force a multi-billion dollar cold-storage wallet. That’s the target. \n\nI reach the bottom of the stairs and step into a cavernous sub-basement. \n\nThe heat hits me like a physical wall. It’s easily a hundred and ten degrees in here. The room is lined with towering banks of servers, their cooling fans screaming at maximum RPM. The ambient red lighting of the belfry is replaced by a harsh, sickly yellow. \n\nAt the center of the room sits a standalone terminal. The screen is flashing a warning pulse. \n\nI walk up to it and wipe a bead of sweat from my brow. The terminal is locked in a runaway processing loop. The room isn't just hot; it's getting hotter by the second. Zero Cool has rigged the environmental controls. The crypto-mining algorithms are redlining the hardware, and the liquid cooling pumps have been remotely disabled. \n\nIf I don't solve Block B, the servers will hit critical mass, trigger a thermal runaway, and cook me alive in this concrete oven. \n\n\"Database Query,\" I say aloud, jacking my interface cable into the terminal. \"You want a query, Zero? Let's give you a query.\"\n\nMy screen floods with the live feed of the mining rigs. Trillions of hashes per second, all grinding away to solve cryptographic puzzles. I need to extract Fragment 2 of the blueprint hidden within this mess, but the data is moving too fast, buried in the noise of the mining protocol. \n\nI look back at my datapad. The connection between Block A and Block B is the key. *Sector_9*. \n\nThe mining rigs are simulating the Sector_9 network environment. I open my command line and start typing furiously. If I try to shut down the mining rigs directly, the system's fail-safes will lock me out, and the heat will keep rising. Instead, I need to use the logic from Block A against Block B. \n\nI write a custom SQL injection, wrapping it in the *Protocol_Blue* exploit architecture I just decrypted. \n\n`> INITIATE DATABASE QUERY`\n`> TARGET",
+            "thought": null,
+            "thought_signature": {
+              "__type__": "bytes",
+              "base64": "<base64 omitted; see prompt asset files>"
+            },
+            "video_metadata": null,
+            "tool_call": null,
+            "tool_response": null,
+            "part_metadata": null
+          }
+        ],
+        "role": "model"
+      },
+      "citation_metadata": null,
+      "finish_message": null,
+      "token_count": null,
+      "finish_reason": "MAX_TOKENS",
+      "grounding_metadata": null,
+      "avg_logprobs": null,
+      "index": 0,
+      "logprobs_result": null,
+      "safety_ratings": null,
+      "url_context_metadata": null
+    }
+  ],
+  "create_time": null,
+  "model_version": "gemini-3.1-pro-preview",
+  "prompt_feedback": null,
+  "response_id": "I4niadOiG7eM_PUPhrnMmA8",
+  "usage_metadata": {
+    "cache_tokens_details": null,
+    "cached_content_token_count": null,
+    "candidates_token_count": 852,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 1379,
+    "prompt_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 1379
+      }
+    ],
+    "thoughts_token_count": 1192,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 3423,
+    "traffic_type": null
+  },
+  "model_status": null,
+  "automatic_function_calling_history": null,
+  "parsed": null
+}

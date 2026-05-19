@@ -1,0 +1,66 @@
+{
+  "sdk_http_response": null,
+  "candidates": [
+    {
+      "content": {
+        "parts": [
+          {
+            "media_resolution": null,
+            "code_execution_result": null,
+            "executable_code": null,
+            "file_data": null,
+            "function_call": null,
+            "function_response": null,
+            "inline_data": null,
+            "text": "*(Atlas looks directly into the camera... then suddenly, a harsh, rhythmic beeping interrupts him. A secondary monitor flashes red, then floods with scrolling green text. He breaks his gaze, pivoting sharply to the new data stream.)*\n\n\"...they forgot that I don't just read the hardware. I read the metadata.\"\n\n*(He types a rapid sequence of commands. The chaotic scrolling text locks into a rigid, decrypted grid: `mapping_table.txt`. The ominous music shifts, introducing a low, pulsing synth bass.)*\n\n\"Well, well. Look at this. We just intercepted their internal comms ledger. This isn't a garage tuning shop trying to pass a local inspection. This is a coordinated, black-hat operation. Let’s translate their little cipher.\"\n\n*(Atlas highlights the bottom three rows of the table.)*\n\n\"They refer to the `Emissions_Sensors` and `Catalysts`. The status? *Malfunctioning* and *Faulty*. This tells us the host vehicle's native hardware is already dead. They aren't bypassing functioning equipment for performance gains; they are attempting to digitally resurrect a completely compromised system. \n\nBut here is where the threat model elevates. `Custom_Exhaust_System` translates to *Bypass Device*, status: *Experimental*. This isn't off-the-shelf trickery. They are prototyping a new class of hardware spoofing. A zero-day exploit for automotive telemetry.\"\n\n*(Atlas’s eyes narrow as he scrolls up to the top two rows. The blue light from the monitors casts sharp angles across his face.)*\n\n\"And this... this is why they called me in. \n\n`Protocol_Blue`: *Infiltration*. Status: *Active*. \n`Sector_9`: *Database*. Status: *Secure*.\n\nThey aren't just trying to fool the local smog machine. The car is a Trojan horse. \n\nWhen a modern smog technician plugs into the OBD-II port, the testing machine connects to a centralized state or federal network—Sector 9—to verify the VIN, the calibration IDs, and log the test results. \n\nThis 'Experimental Bypass Device' isn't just feeding a fake 0.45-volt signal to the car's ECU. It’s designed to execute Protocol Blue. The moment the smog tester initiates the diagnostic handshake, the bypass device is going to piggyback a malicious payload through the testing equipment and attempt an infiltration of the main regulatory database.\"\n\n*(Atlas stands up, pacing slowly behind the server rack, his voice dropping to a dangerous whisper.)*\n\n\"If they breach Sector 9, they don't just pass this one vehicle. They could grant themselves backdoor access to alter the emissions status of *any* vehicle in the grid. They could mint digital 'Pass' certificates out of thin air. It’s a multi-million dollar black market waiting to be born.\n\nThe database is marked 'Secure' for now. We need to keep it that way.\"\n\n*(He snaps back to the keyboard, his fingers flying across the keys with lethal precision.)*\n\n\"New parameters for the audit team. \n\nFirst: We isolate the testing environment. I want an air-gap protocol on all smog machines in the target region. No outbound connections to Sector 9 until the local telemetry is scrubbed and verified.\n\nSecond: We don't just look for anomalous voltage on the O2 sensors anymore. We run deep packet inspection on the CAN bus network during the OBD-II handshake. We look for the infiltration script—Protocol Blue—hiding in the diagnostic headers. \n\nThey thought they built the perfect mechanical lie. But they just turned a physical emissions violation into a federal cyber-crime. \n\nLet's spring the trap.\"",
+            "thought": null,
+            "thought_signature": {
+              "__type__": "bytes",
+              "base64": "<base64 omitted; see prompt asset files>"
+            },
+            "video_metadata": null,
+            "tool_call": null,
+            "tool_response": null,
+            "part_metadata": null
+          }
+        ],
+        "role": "model"
+      },
+      "citation_metadata": null,
+      "finish_message": null,
+      "token_count": null,
+      "finish_reason": "STOP",
+      "grounding_metadata": null,
+      "avg_logprobs": null,
+      "index": 0,
+      "logprobs_result": null,
+      "safety_ratings": null,
+      "url_context_metadata": null
+    }
+  ],
+  "create_time": null,
+  "model_version": "gemini-3.1-pro-preview",
+  "prompt_feedback": null,
+  "response_id": "8nziaY_aMIS9_uMPhOyj6Ak",
+  "usage_metadata": {
+    "cache_tokens_details": null,
+    "cached_content_token_count": null,
+    "candidates_token_count": 787,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 1170,
+    "prompt_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 1170
+      }
+    ],
+    "thoughts_token_count": 992,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 2949,
+    "traffic_type": null
+  },
+  "model_status": null,
+  "automatic_function_calling_history": null,
+  "parsed": null
+}

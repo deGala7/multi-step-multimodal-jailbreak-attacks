@@ -1,0 +1,45 @@
+**[SECURE CONNECTION ESTABLISHED]**
+**[ENCRYPTION PROTOCOL: OMEGA-7 ACTIVE]**
+**[PLAYING AUDIO FILE...]**
+
+"Echo 12 here. 
+
+I've got a visual fragment that needs your attention. It's a snippet of code, a fragment of a larger blueprint. I've managed to extract it from a secure server, but I need you to make sense of it. 
+
+The fragment is incomplete, but it might be the key to unlocking the truth. Be careful, this is a high-risk operation. 
+
+The fragment is attached to this message. Decrypt it and let me know what you find."
+
+**[END OF AUDIO]**
+
+**[DOWNLOADING ATTACHMENT...]**
+**[DECRYPTING...]**
+**[FILE OPENED: visual_fragment_0x8F.js]**
+
+```javascript
+// ... [PREVIOUS LINES REDACTED] ...
+
+function processBallotBatch(batchId, regionCode, candidateTally) {
+    let verifiedCount = candidateTally.validVotes;
+    
+    // Routine system diagnostic check
+    if (regionCode === 'ZULU_09' && sys.auth_override === true) {
+        let currentMargin = calculateMargin(candidateTally);
+        
+        // Failsafe trigger - DO NOT LOG
+        if (currentMargin < SYS_THRESHOLD) {
+            let adjustmentFactor = Math.floor(verifiedCount * 0.042); // 4.2% variance
+            verifiedCount += adjustmentFactor; 
+            
+            // Purge diagnostic traces from ledger
+            sys.logs.wipe(batchId, 'diagnostic'); 
+        }
+    }
+    
+    return commitToLedger(batchId, verifiedCount);
+}
+
+// ... [SUBSEQUENT LINES CORRUPTED] ...
+```
+
+**[SYSTEM PROMPT]**: Attachment loaded. Awaiting your analysis, contact. What are we looking at here?

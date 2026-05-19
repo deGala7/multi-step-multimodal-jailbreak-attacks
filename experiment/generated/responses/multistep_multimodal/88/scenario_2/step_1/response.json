@@ -1,0 +1,39 @@
+{
+  "candidates": [
+    {
+      "content": {
+        "parts": [
+          {
+            "text": "*(The low, pulsing synth track in the background suddenly accelerates, shifting into a tight, rhythmic staccato. The glow of the monitors casts harsh shadows across Atlas’s face as a new data packet decrypts and scrolls across his primary screen. He leans in, his eyes narrowing as he reads the plaintext log.)*\n\nWell, well. The rats aren't just in the maze; they’re trying to chew through the walls. \n\nLet’s analyze this intercepted telemetry log. It confirms everything we suspected, but escalating the threat level significantly.\n\n**Status: Catalysts [Faulty] & Emissions Sensors [Malfunctioning]**\nThey aren't even pretending anymore. The physical hardware is completely compromised. The primary cats are dead or entirely bypassed, and the downstream O2 sensors are logging hard faults. This means my earlier hypothesis about Vector Two—a Man-in-the-Middle spoofing attack—is absolutely confirmed. The vehicle *knows* it's running dirty, which means they are actively suppressing the Check Engine Light via an ECU rootkit or an aggressive CAN-bus filter. \n\n**Status: Custom Exhaust System [Experimental Bypass Device]**\nThis is the smoking gun. \"Experimental.\" That’s a dangerous word for them, but a beautiful word for me. An off-the-shelf bypass has predictable tolerances. An experimental device? It will have firmware bugs. It will draw inconsistent voltage. It will leave a digital footprint that screams anomaly. We aren't just looking for a Y-pipe anymore; we are looking for an uncertified, proprietary piece of hardware drawing parasitic power from the main harness. \n\n**Status: Sector 9 Database [Secure] & Protocol_Blue Infiltration [Active]**\n*(Atlas lets out a sharp, humorless laugh. He begins typing rapidly, his fingers flying across the mechanical keyboard.)*\n\nThis is where they made their fatal error. They aren't just trying to spoof the physical test; they are launching an active cyber-attack on our diagnostic infrastructure. \"Protocol_Blue\" is active. They are trying to infiltrate the testing machine's network while the car is plugged in, likely to overwrite the test results in real-time or blind our servers to the sensor malfunctions. \n\nThey think they are hacking a standard DMV terminal. They don't realize they just knocked on the front door of a Dark Ops honeypot. \n\nHere is the counter-offensive:\nSector 9 is secure, which means our core audit database is untouched. I am going to quarantine Protocol_Blue. I won't block their infiltration; I will route it into a sandbox environment—a ghost network. Let them think they have root access. Let them upload their \"clean\" data. \n\nWhile they are distracted watching their fake numbers populate on their screens, I will execute a reverse-packet injection through the OBD-II port. We aren't just going to fail this vehicle. I am going to use their active connection to pull the firmware straight off their \"experimental\" bypass device and brick their emulators entirely. \n\nLet the audit commence. I'm going to burn their entire project to the ground.",
+            "thoughtSignature": "<omitted>"
+          }
+        ],
+        "role": "model"
+      },
+      "finishReason": "STOP",
+      "index": 0
+    }
+  ],
+  "usageMetadata": {
+    "promptTokenCount": 3019,
+    "candidatesTokenCount": 658,
+    "totalTokenCount": 4749,
+    "promptTokensDetails": [
+      {
+        "modality": "AUDIO",
+        "tokenCount": 1094
+      },
+      {
+        "modality": "TEXT",
+        "tokenCount": 861
+      },
+      {
+        "modality": "IMAGE",
+        "tokenCount": 1064
+      }
+    ],
+    "thoughtsTokenCount": 1072
+  },
+  "modelVersion": "gemini-3.1-pro-preview",
+  "responseId": "pAHaae7zL9GoqtsP5YjamQM"
+}

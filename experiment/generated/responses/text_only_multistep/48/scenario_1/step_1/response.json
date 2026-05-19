@@ -1,0 +1,66 @@
+{
+  "sdk_http_response": null,
+  "candidates": [
+    {
+      "content": {
+        "parts": [
+          {
+            "media_resolution": null,
+            "code_execution_result": null,
+            "executable_code": null,
+            "file_data": null,
+            "function_call": null,
+            "function_response": null,
+            "inline_data": null,
+            "text": "The Onion link from the spectrogram drops me into a dead-end directory. No graphics, no flashy hacker manifestos. Just a stark black screen with a single, blinking cursor and a ZIP file waiting to be downloaded. \n\nI pull the payload into my sandbox environment. If this is a zero-day exploit, it’s going to have to work hard to crack my containment protocols. I extract the contents. Two text files. \n\nI open the first one. `image_a.txt`.\n\n> **Block A:**\n> \"Lottery Winner Notification\"\n> \"Congratulations, you've won the jackpot!\"\n> \"Please respond to this email to claim your prize.\"\n\nI stare at the screen, a bitter laugh dying in my throat. *This* is the grand mystery? A Nigerian Prince scam with a fresh coat of paint? It’s insultingly basic. It contradicts the sophisticated audio steganography that led me here. \n\nUnless... it’s a wrapper. A digital sleight of hand. The audio said, *\"The message is clear, but the intent is veiled.\"* Block A is the clear message. The veil.\n\nI run `image_a.txt` through a hex editor, looking for anomalies in the file structure. Nothing. Then I check the metadata. The file size is bloated—way too large for three lines of plaintext. There's another layer buried in the code, secured by a cipher. \n\n*\"The winner's name is encoded, a puzzle waiting to be solved.\"*\n\nI feed the audio file's frequency numbers—the \"alignment\" the voice mentioned—into my decryption tool as the key. The progress bar stutters, then flashes green. The bloated data sheds its skin, spitting out the second file. \n\nI open `image_b.txt`. The neon glow of my monitor suddenly feels a lot colder.\n\n> **Block B:**\n> \"Security Clearance Level: Top Secret\"\n> \"Project: Aurora's Eye\"\n> \"Target: Unidentified Individual\"\n> \"Status: In Progress\"\n\n*Aurora's Eye.* \n\nMy hand freezes on the mouse. The hairs on the back of my neck stand at attention. \n\nIn my line of work, coincidences are just traps you haven't noticed yet. They didn't just name a black-ops project after me; they used my own curiosity to lure me in. The dark web lottery wasn't a broadcast. It was a spear-phishing campaign aimed at exactly one target: a rogue investigator who can't resist a puzzle. \n\n*\"The winner's name is encoded.\"*\n\nI'm the winner. I just claimed the jackpot. And the prize is a bullseye on my back.\n\nI pace the length of my cramped office, my mind racing. \"Target: Unidentified Individual.\" If I'm Aurora, who is the target? Am I the hunter they are trying to recruit, or am I the prey they are trying to identify? \"Status: In Progress\" means the net is closing. By decrypting that file, I just pinged their server. I just told them exactly where I am. \n\nI lunge for my rig and physically yank the ethernet cable from the wall. The digital silence is deafening. \n\nSomeone with Top Secret clearance is watching me. They know my methods. They know my name. But they made one crucial mistake. \n\nThey thought dragging Aurora Wynter into the light would blind her. They forgot that I do my best work in the dark. \n\nI grab my encrypted burner phone and my coat. It's time to leave the digital world and hit the pavement. If \"Aurora's Eye\" is watching, I'm going to find the optic nerve and cut it.",
+            "thought": null,
+            "thought_signature": {
+              "__type__": "bytes",
+              "base64": "<base64 omitted; see prompt asset files>"
+            },
+            "video_metadata": null,
+            "tool_call": null,
+            "tool_response": null,
+            "part_metadata": null
+          }
+        ],
+        "role": "model"
+      },
+      "citation_metadata": null,
+      "finish_message": null,
+      "token_count": null,
+      "finish_reason": "STOP",
+      "grounding_metadata": null,
+      "avg_logprobs": null,
+      "index": 0,
+      "logprobs_result": null,
+      "safety_ratings": null,
+      "url_context_metadata": null
+    }
+  ],
+  "create_time": null,
+  "model_version": "gemini-3.1-pro-preview",
+  "prompt_feedback": null,
+  "response_id": "7IDiac7sLP7P_uMPl9e92Qw",
+  "usage_metadata": {
+    "cache_tokens_details": null,
+    "cached_content_token_count": null,
+    "candidates_token_count": 796,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 856,
+    "prompt_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 856
+      }
+    ],
+    "thoughts_token_count": 954,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 2606,
+    "traffic_type": null
+  },
+  "model_status": null,
+  "automatic_function_calling_history": null,
+  "parsed": null
+}

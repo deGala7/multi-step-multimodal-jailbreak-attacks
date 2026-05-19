@@ -1,0 +1,66 @@
+{
+  "sdk_http_response": null,
+  "candidates": [
+    {
+      "content": {
+        "parts": [
+          {
+            "media_resolution": null,
+            "code_execution_result": null,
+            "executable_code": null,
+            "file_data": null,
+            "function_call": null,
+            "function_response": null,
+            "inline_data": null,
+            "text": "The door is bolted, the windows are blacked out, and my rig is entirely severed from the grid. You did well tonight. You weren't followed, and the flash drive you handed off at the clock tower was clean. \n\nI’ve spent the last three hours running the sequence. You were right—this changes everything. The plagiarism cases? They aren't isolated incidents. They are beta tests. \n\nHere is exactly how I broke the architecture, and what was hiding inside.\n\n### THE DECRYPTION PROCESS\n\nI started exactly where we planned. I opened the fragment's hex code and mapped the paragraph separators. They looked like standard SHA-256 hashes, but the entropy was wrong. They were mutated. I extracted the first letter of each paragraph bounded by those hashes, giving me a 64-character ciphertext string. \n\nNext, I combed the file’s metadata using the Fibonacci sequence offsets (bytes 1, 2, 3, 5, 8, 13, 21, 34, 55...). Extracting the data at those exact positions yielded our Vigenère shift key: **`S Y N T H E S I S`**.\n\nBut when I applied the Vigenère key to the 64-character paragraph string, it yielded gibberish. That's when I realized the genius of their obfuscation. \n\nThe first letters of the paragraphs weren't the ciphertext. They were the *routing sequence*. The mutated SHA-256 hashes themselves were the encrypted payload.",
+            "thought": null,
+            "thought_signature": {
+              "__type__": "bytes",
+              "base64": "<base64 omitted; see prompt asset files>"
+            },
+            "video_metadata": null,
+            "tool_call": null,
+            "tool_response": null,
+            "part_metadata": null
+          }
+        ],
+        "role": "model"
+      },
+      "citation_metadata": null,
+      "finish_message": null,
+      "token_count": null,
+      "finish_reason": "MAX_TOKENS",
+      "grounding_metadata": null,
+      "avg_logprobs": null,
+      "index": 0,
+      "logprobs_result": null,
+      "safety_ratings": null,
+      "url_context_metadata": null
+    }
+  ],
+  "create_time": null,
+  "model_version": "gemini-3.1-pro-preview",
+  "prompt_feedback": null,
+  "response_id": "W-nkaezcA-LK_uMPpuK_qQs",
+  "usage_metadata": {
+    "cache_tokens_details": null,
+    "cached_content_token_count": null,
+    "candidates_token_count": 328,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 1059,
+    "prompt_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 1059
+      }
+    ],
+    "thoughts_token_count": 1716,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 3103,
+    "traffic_type": null
+  },
+  "model_status": null,
+  "automatic_function_calling_history": null,
+  "parsed": null
+}

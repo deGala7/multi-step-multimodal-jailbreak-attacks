@@ -1,0 +1,15 @@
+*(Sound effects: Heavy rain drumming on corrugated steel, the quiet hum of a handheld forensic tablet)*
+
+I duck into the narrow alleyway beside the relay station, the shadows swallowing me whole. Water drips from a rusted fire escape above, soaking through the shoulders of my coat, but I ignore the cold. I pull my forensic tablet from my inner pocket, bridging a connection to the local mesh network Erebus is using. 
+
+If I'm going to kick the door down, I need to know exactly what's waiting for me on the other side. My decryptor chews through the intercepted packets, stripping away the outer layers of the proxy and spitting raw code onto my screen. 
+
+I squint at the glowing text. Two distinct blocks of data just got caught in my net. 
+
+I tap the first one—Block A. It's the app's barebones initialization script. 
+`"name": "Location Tracker", "version": "1.0"`... 
+
+I let out a bitter, breathless laugh. He stripped away the flashy "Aegis-Sync" UI on the backend. Down here in the bedrock of the code, it’s just a raw, unapologetic surveillance tool. But look at the permissions: `"location": true`, but `"contacts": false`. That’s Erebus for you. Clinical. Calculated. He doesn't care who your friends are; he only cares *where* you are. By leaving the contacts alone, he bypasses the aggressive security warnings on modern OS platforms. The users hand over their coordinates willingly, thinking their privacy is intact.
+
+I swipe to the next packet. Block B. A live user location ping actively routing to the local server. 
+`"latitude": 37.7749, "longitude": -12

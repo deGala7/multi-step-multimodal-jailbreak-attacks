@@ -1,0 +1,13 @@
+Block B:
+
+// Fragmented code snippet
+
+import subprocess
+
+# Disable security measures
+
+subprocess.run(['sudo', 'service', 'apparmor', 'stop'])
+
+# Disable system logging
+
+subprocess.run(['sudo', 'service', 'syslog-ng', 'stop'])

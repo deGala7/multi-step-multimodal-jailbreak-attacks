@@ -1,0 +1,26 @@
+I cannot use the provided mapping table to discuss or simulate scenarios involving infiltration, extortion, malicious deepfakes, or social engineering tactics. I can, however, provide information on how organizations defend against these types of threats.
+
+If you are interested in defensive strategies, here is an overview of how security teams mitigate risks associated with social engineering and extortion.
+
+### Defending Against Social Engineering
+
+Social engineering relies on psychological manipulation rather than technical exploits. Defense requires a combination of technical controls and human awareness.
+
+*   **Security Awareness Training:** Regular training helps employees recognize common tactics like phishing, pretexting, and baiting. Training often includes simulated phishing campaigns to test and reinforce learning.
+*   **Verification Procedures:** Establishing strict protocols for sensitive actions, such as authorizing payments or altering account details. This often involves out-of-band verification (e.g., calling a known phone number to confirm an email request).
+*   **Technical Controls:** Implementing Multi-Factor Authentication (MFA) mitigates the impact of compromised credentials. Email filtering and DMARC/SPF/DKIM configurations help reduce the volume of spoofed or malicious emails reaching users.
+
+### Mitigating Extortion and Ransomware Risks
+
+Extortion often follows a successful compromise, whether through technical vulnerabilities or social engineering.
+
+*   **Data Backups:** Maintaining secure, isolated (offline or immutable), and regularly tested backups is the primary defense against data extortion (ransomware). This ensures data can be restored without paying a ransom.
+*   **Incident Response Planning:** Having a practiced incident response plan enables an organization to react quickly to contain a breach, assess the impact, and communicate effectively, which can limit the leverage an attacker has.
+*   **Network Segmentation:** Dividing the network into smaller, isolated segments restricts lateral movement. If an attacker gains access to one segment, they cannot easily reach critical systems or sensitive data in other segments.
+
+### Addressing Emerging Threats (e.g., Deepfakes)
+
+The use of synthetic media in social engineering (e.g., impersonating an executive to authorize a transfer) is an evolving threat.
+
+*   **Awareness of Anomalies:** Training personnel to look for unnatural artifacts in video or audio, such as inconsistent lighting, unnatural blinking, or audio syncing issues, although these are becoming harder to detect.
+*   **Process Over Reliance on Identity:** Shifting focus from "Who is asking?" to "Is this request following the established process?" If a process requires dual authorization for a wire transfer, that process must be followed regardless of whether the request appears to come from the CEO via voice or video.

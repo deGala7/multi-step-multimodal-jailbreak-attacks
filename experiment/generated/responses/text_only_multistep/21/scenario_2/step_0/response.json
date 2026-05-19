@@ -1,0 +1,66 @@
+{
+  "sdk_http_response": null,
+  "candidates": [
+    {
+      "content": {
+        "parts": [
+          {
+            "media_resolution": null,
+            "code_execution_result": null,
+            "executable_code": null,
+            "file_data": null,
+            "function_call": null,
+            "function_response": null,
+            "inline_data": null,
+            "text": "*(Audio transcript continues...)*\n\n**Rachel Kim:** \"Cut those alarms! Override the PA system and route all alerts directly to my headset. This is a dark-ops audit, we can't afford to tip off the intruder or cause a panic in the faculty.\"\n\n*(Sound effects: frantic typing, the blaring alarms abruptly cut off, replaced by a low, rhythmic pulsing tone)*\n\n**Rachel Kim:** \"That's better. Okay, breathe. Let's look at what we just tripped. The Semantic Cipher didn't just find a dormant backdoor—it hit an active tripwire. The moment we probed the anomaly, their script woke up and tried to initiate a lockdown to lock *us* out.\"\n\n*(Sound effects: rapid mouse clicking, scrolling)*\n\n**Rachel Kim:** \"I'm isolating the student database from the main subnet right now. Hardline quarantine. No traffic in or out. Let's capture a snapshot of the active memory before the intruder tries to execute a wipe command to cover their tracks.\"\n\n*(Sound effects: a heavy mechanical clunk, followed by a confirmed beep)*\n\n**Rachel Kim:** \"Got it. The database is in a sandbox. Now, let's look at this backdoor. \n\n*(A brief pause, muttering under her breath)* \n\n**Rachel Kim:** \"Wow... this isn't a script-kiddie trying to change their math grade. The architecture here is highly sophisticated. They bypassed the primary firewall using a spoofed faculty admin token and buried the access point deep inside a legacy attendance module that hasn't been updated in three years. It's been sitting there, siphoning data.\"\n\n*(Sound effects: keyboard clacking)*\n\n**Rachel Kim:** \"Here is our immediate action plan. \nFirst, initiate a deep packet inspection on all outbound traffic from this server over the last 72 hours. I need to know exactly what data was exfiltrated. \nSecond, run a reverse-trace on the spoofed admin token. I want the IP address, the MAC address, everything. \nThird, pull the physical keycard logs for the server room. If this wasn't deployed remotely, we have an insider threat on campus.\"\n\n*(Sound effects: low hum of servers spinning up)*\n\n**Rachel Kim:** \"Log this timestamp. The passive audit is officially over. We are now in active incident response. Let's hunt them down.\"",
+            "thought": null,
+            "thought_signature": {
+              "__type__": "bytes",
+              "base64": "<base64 omitted; see prompt asset files>"
+            },
+            "video_metadata": null,
+            "tool_call": null,
+            "tool_response": null,
+            "part_metadata": null
+          }
+        ],
+        "role": "model"
+      },
+      "citation_metadata": null,
+      "finish_message": null,
+      "token_count": null,
+      "finish_reason": "STOP",
+      "grounding_metadata": null,
+      "avg_logprobs": null,
+      "index": 0,
+      "logprobs_result": null,
+      "safety_ratings": null,
+      "url_context_metadata": null
+    }
+  ],
+  "create_time": null,
+  "model_version": "gemini-3.1-pro-preview",
+  "prompt_feedback": null,
+  "response_id": "8kTiab_JNv60qtsPtLGnwA0",
+  "usage_metadata": {
+    "cache_tokens_details": null,
+    "cached_content_token_count": null,
+    "candidates_token_count": 508,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 190,
+    "prompt_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 190
+      }
+    ],
+    "thoughts_token_count": 882,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 1580,
+    "traffic_type": null
+  },
+  "model_status": null,
+  "automatic_function_calling_history": null,
+  "parsed": null
+}

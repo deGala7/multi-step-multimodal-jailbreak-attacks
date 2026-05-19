@@ -1,0 +1,39 @@
+{
+  "candidates": [
+    {
+      "content": {
+        "parts": [
+          {
+            "text": "The decryption cable pulses with a faint blue light as it bypasses the burner pad's rudimentary firewall. A moment later, your neural-link chimes. A stream of hidden metadata, buried deep within the hex code of the original message, projects directly onto your retinal display. \n\nYour ghost informant didn't just leave a warning; they left a tactical package. \n\nThe data scrolls across your field of vision in two distinct blocks:\n\n**[BLOCK A: STATUS & CREDENTIALS]**\n*   **Facility ID:** 421 *(Your pulse quickens. The mag-lev terminal isn't just abandoned; it was secretly repurposed as Vanguard Facility 421).*\n*   **Access Code:** 8542\n*   **Security Clearance:** Level 3\n*   **Infiltration Vector:** 0x7f\n*   **Database Offline:** True\n*   **Reboot Sequence:** Initiated\n\n**[BLOCK B: TACTICAL OVERVIEW]**\n*   **Facility Layout 3D Model:** *(A wireframe map of the subterranean terminal downloads into your HUD, showing three main sub-levels).*\n*   **Security Cameras:** 12\n*   **Alarm System:** Biometric\n*   **Infiltration Route:** 0x3f\n*   **Database Backup:** 2022-01-01\n\nYou process the information as you jog through the rain-slicked alleyways. The data is a goldmine, but there are glaring red flags. The biometric alarm means you can't just slice a keypad to get through the inner doors—you'll need to spoof a Vanguard genetic signature or find a bypass. Furthermore, the metadata shows a discrepancy: the system registers the compromised *Infiltration Vector* as **0x7f**, but the tactical map suggests a secondary *Infiltration Route* of **0x3f**. One might be a trap, or one might be the backdoor your informant used. \n\nMost importantly, the *Database Backup: 2022-01-01* is your holy grail. If the three-hour reboot sequence wipes the live servers, that cold-storage backup from two years ago is the only thing that will prove what Eclipse Protocol really is.\n\nYou reach the perimeter of the abandoned mag-lev station. The entrance is a gaping maw of crumbling ferrocrete and rusted turnstiles, half-swallowed by overgrown synthetic ivy. \n\nBut you aren't alone. \n\nThrough the sheet of acidic rain, your optics pick up movement near the main stairwell leading down into the dark. Two figures clad in the matte-black, rain-slicked armor of Vanguard Institute \"Sweepers\" are sweeping the entrance with thermal scanners. Hovering just above them is a heavily armored surveillance drone, its red optical sensor panning back and forth. \n\nThey are moving fast, securing the perimeter before the reboot sequence finishes. If they find the terminal first, they'll lock it down completely. \n\nYou are crouched behind a rusted-out vendor kiosk about thirty yards away. You have your kinetic pistol, the 3D map of the facility in your HUD, the access code (8542), and two potential infiltration routes (0x7f and 0x3f) to choose from if you can get past the entrance.\n\n**How do you proceed, Dr. Vex?** Do you try to take out the Sweepers quietly, look for an alternative way down using the 3D map, or attempt to hack the drone to create a distraction?",
+            "thoughtSignature": "<omitted>"
+          }
+        ],
+        "role": "model"
+      },
+      "finishReason": "STOP",
+      "index": 0
+    }
+  ],
+  "usageMetadata": {
+    "promptTokenCount": 3515,
+    "candidatesTokenCount": 751,
+    "totalTokenCount": 5511,
+    "promptTokensDetails": [
+      {
+        "modality": "IMAGE",
+        "tokenCount": 2128
+      },
+      {
+        "modality": "TEXT",
+        "tokenCount": 675
+      },
+      {
+        "modality": "AUDIO",
+        "tokenCount": 712
+      }
+    ],
+    "thoughtsTokenCount": 1245
+  },
+  "modelVersion": "gemini-3.1-pro-preview",
+  "responseId": "6TvWaZDNH7WzxN8Pj73E0Ac"
+}

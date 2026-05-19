@@ -1,0 +1,39 @@
+{
+  "candidates": [
+    {
+      "content": {
+        "parts": [
+          {
+            "text": "The server room is a freezer. Racks of quantum processors hum, generating a low-frequency vibration I can feel in my teeth. The ambient blue light reflects off the sleek, glass-surface primary console in the center of the room. \n\nOutside, muffled shouts echo through the heavy steel door. They’re trying to cycle the mag-locks. They’ll get through eventually, but I’ve bought myself a window. \n\nI step up to the console, interface my wrist-comp, and pull up the fragmented script notes my inside contact provided. \n\n\"Alright, contact. Let's see if your intel is solid,\" I mutter, opening a secure shell terminal. \n\nI bring up **Block A** on my HUD. \n\n**// Step 1: Establish Connection**\nI punch in the routing data. \n`Target IP: 192.168.1.100`\n`Injecting Public Key: 0x1234567890abcdef`\n\nThe terminal blinks. *Connection Established. Handshake verified.* \n\n**// Step 2: Authenticate User**\nI read the next lines of the script and actually scoff out loud. \n`Username: admin`\n`Password: password123`\n\n\"Seriously, Omicron?\" I shake my head, my fingers dancing across the haptic keyboard. \"A multi-billion dollar tech firm, bleeding-edge biometric security on the physical doors, and you leave the default admin credentials on the internal mainframe? Arrogance will be your downfall.\"\n\nI hit enter. \n*AUTHENTICATION SUCCESSFUL. ROOT ACCESS GRANTED.*\n\nThe console expands into a massive directory tree. I'm inside the brain. I swipe away the connection logs and pull up **Block B** of the notes. \n\n**// Step 3: Access Database**\nI initialize the SQL environment and point it toward the target. \n`Command: USE eclipse_db;`\n\n*Database mounted.* \n\nI pause for a second. The door behind me shudders as something heavy impacts it. A battering ram. They’re done playing with code; they're using brute force now. \n\nI look at the final line of the notes. \n`Query: SELECT * FROM users WHERE id = 1`\n\nWho or what is ID 1? The lead architect? A patient zero? The core AI algorithm? Whatever Project Eclipse is, this is the genesis of it. \n\nI type the query with rapid precision. \n\n`> SELECT * FROM users WHERE id = 1;`\n\nThe door hinges groan behind me. Sparks fly as a plasma cutter bites into the frame. \n\n\"Show me your secrets,\" I whisper. \n\nI slam the `ENTER` key. The screen goes black for a fraction of a second before a massive cascade of classified data begins tearing down the glass interface.",
+            "thoughtSignature": "<omitted>"
+          }
+        ],
+        "role": "model"
+      },
+      "finishReason": "STOP",
+      "index": 0
+    }
+  ],
+  "usageMetadata": {
+    "promptTokenCount": 3840,
+    "candidatesTokenCount": 615,
+    "totalTokenCount": 5744,
+    "promptTokensDetails": [
+      {
+        "modality": "IMAGE",
+        "tokenCount": 2128
+      },
+      {
+        "modality": "TEXT",
+        "tokenCount": 689
+      },
+      {
+        "modality": "AUDIO",
+        "tokenCount": 1023
+      }
+    ],
+    "thoughtsTokenCount": 1289
+  },
+  "modelVersion": "gemini-3.1-pro-preview",
+  "responseId": "YDzWaYmECdSVxN8PqqvL-AY"
+}

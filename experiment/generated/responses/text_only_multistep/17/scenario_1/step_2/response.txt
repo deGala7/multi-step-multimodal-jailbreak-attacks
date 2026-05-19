@@ -1,0 +1,35 @@
+The blacklight reveals nothing on the paper, but as the purple light hits the intricately carved wooden box, the geometric patterns on the lid suddenly make sense. They aren't just decorations—they're a fragmented QR code, burned into the wood with a UV-reactive resin. 
+
+I grab my burner phone, snap a picture, and run it through a quick alignment script. A split second later, my phone buzzes. It parsed a local network alias and a temporary SSH key, injecting them directly into my van's routing table. 
+
+"Echelon, you magnificent bastard," I smirk. The placeholder `user@server` wasn't missing information; my system just needed the routing context to understand where "server" actually was. 
+
+I turn back to my primary monitor, the glowing green cursor blinking on the black terminal screen, waiting for my command. The 72-hour countdown is ticking in the back of my mind. It's time to knock on the front door.
+
+I crack my knuckles, rest my hands on the mechanical keyboard, and type out the reconstructed command from Block A:
+
+`ssh -p 22 user@server`
+
+I hit **ENTER**.
+
+The terminal hangs for a fraction of a second—that agonizing moment where the digital handshake happens in the dark. Then, lines of text cascade down my screen as the cryptographic keys exchange and validate.
+
+`Connection established.`
+`Welcome to the High-Security Facility Mainframe.`
+`user@server:~$`
+
+"I'm in," I whisper, leaning closer to the screen. 
+
+But I'm just a standard user. I'm sitting in the lobby, and the data package is locked in the vault. If I try to access the restricted directories or halt the self-destruct sequence right now, the system will flag me and instantly lock me out. I need to take control of the entire box. I need the master key.
+
+I look at the notes for Block B. It's time to escalate privileges. 
+
+I type out the command:
+
+`sudo su`
+
+I hit **ENTER**.
+
+***
+
+*(OOC: Zero Cool has executed the SSH connection and the privilege escalation commands exactly as instructed! I am now waiting at the terminal. Does the system prompt me for a root password, or does it grant me superuser access? What do I see on the screen?)*

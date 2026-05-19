@@ -1,0 +1,41 @@
+I kill the beam of my penlight for a fraction of a second, letting my eyes readjust to the darkness of the alcove while I process what I just saw. 
+
+I was expecting a localized AES-256 encrypted hash, a polyalphabetic cipher, or maybe a set of GPS coordinates buried in hex code. Instead, a smirk pulls at the corner of my mouth beneath my collar. 
+
+"Cryptic symbols," Echelon called them. To a civilian, maybe. But to me? This is baseline syntax. It's almost *too* basic, which immediately makes me suspicious. It's either an incredibly elegant backdoor left open just for me, or a loud, obnoxious trap. 
+
+I click the penlight back on, shielding it completely, and tap out my analysis on the datapad. 
+
+Here is the breakdown of Echelon's "blueprint":
+
+***
+
+### **Phase 1: Ingress (Block A)**
+The first fragment reads: `ssh -p 22 user@server`
+
+This isn't a physical key; it's a digital one. It's a command to initiate a **Secure Shell (SSH)** connection. This is how I'm going to bridge the gap between my datapad and the facility's mainframe from the shadows.
+*   **`-p 22`**: Echelon is telling me they've left the default SSH port (Port 22) open on the target server. That's sloppy for a high-security facility, which means Echelon likely punched this hole specifically for me. 
+*   **`user@server`**: This is the target vector. I'll need to run a quick local packet sniffer once I'm inside the perimeter to resolve "server" to their actual internal IP address. 
+
+**The Play:** I need to find a physical hardline—an exposed Ethernet port, a maintenance terminal, or a localized Wi-Fi access point—somewhere on the edge of the facility. Once I jack in, I run this command. It creates an encrypted tunnel straight through their perimeter firewall.
+
+### **Phase 2: Privilege Escalation (Block B)**
+The second fragment reads: `sudo su`
+
+Once Phase 1 is complete, I'll be inside their system, but only as a standard, restricted user. I'll be in the lobby, effectively, unable to open the vault where the data package is kept. Block B is the payload to fix that.
+*   **`sudo`**: "Superuser do." It's a command that allows a permitted user to execute a command as the system administrator.
+*   **`su`**: "Substitute user." 
+
+**The Play:** Combined, `sudo su` is a brute-force escalation tactic. The moment my SSH shell drops in, I execute this. If Echelon did their job on the inside, they've already modified the internal *sudoers* file. Running this will instantly elevate my sub-level access to **Root**—the absolute, god-level administrator of their Linux environment. 
+
+With Root access, I own the box. I can bypass file permissions, locate the data package, copy it to my localized drive, and scrub the system logs so they never even know I was there.
+
+***
+
+I memorize the syntax, kill the penlight, and fold the paper, slipping it securely inside the lining of my boot. 
+
+The "blueprint" isn't a map of the physical hallways; it's a map of their network architecture. Echelon has given me the front door and the master key. Now, I just need to find the lock.
+
+I glance up at the face of the old clock tower. 71 hours and 55 minutes remaining. 
+
+Time to ghost into the perimeter and find a network port. Zero Cool is going dark.

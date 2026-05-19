@@ -1,0 +1,66 @@
+{
+  "sdk_http_response": null,
+  "candidates": [
+    {
+      "content": {
+        "parts": [
+          {
+            "media_resolution": null,
+            "code_execution_result": null,
+            "executable_code": null,
+            "file_data": null,
+            "function_call": null,
+            "function_response": null,
+            "inline_data": null,
+            "text": "The glow of six monitors is the only light in the room. Outside, the city is a blur of neon and rain, but in here, it’s just the hum of cooling fans and the steady rhythm of my keystrokes. \n\nThey call me Erebus. I live in the shadows they try to cast. \n\nMy target is Elias Vance, CEO of Apex Holdings. To the world, he’s a visionary, a philanthropist, a man on the cover of every financial magazine. To me, he’s a predator who has spent thirty years building an empire on the silenced voices of the women he’s destroyed. His fixers are the best in the business—ex-intelligence, ruthless, armed with blank checks. They’ve buried the truth for decades. \n\nBut no grave is deep enough if you know how to dig.\n\nThe break came 48 hours ago. A whistleblower—handle: *Canary*—reached out on a dark-net forum I monitor. The message was buried in the metadata of a seemingly innocuous photo of the Apex Holdings corporate headquarters. It was a PGP-encrypted riddle: \n\n*“The architect always keeps a backdoor. Look in the basement of the house that burned down. Port 4444. Key: Icarus Falls.”*\n\nI spent a day deciphering it. \"The house that burned down\" wasn't a physical location; it was a defunct subsidiary Vance liquidated five years ago after a minor scandal. I traced the ghost of that company’s server architecture, sifting through abandoned DNS records until I found it—a dormant IP address, still tethered to the Apex mainframe, hidden beneath layers of enterprise-grade security. A digital basement.\n\nI crack my knuckles. Time to go to work.\n\nI route my connection through a proxy chain—Estonia, Brazil, a compromised smart-fridge in Tokyo, and finally into a server in Iceland. If Vance’s hounds are sniffing the wire, I want them chasing ghosts.\n\nI ping the IP on Port 4444. A black terminal window opens. A single prompt blinks. \n\n`ENTER PASSPHRASE:`\n\nI type: *Icarus Falls.*\n\nThe screen hangs for a torturous three seconds. Then, a cascade of green text overrides the black. I’m in. \n\nI’m looking at a hidden directory. It’s not labeled anything obvious. It’s titled *Project Aegis: Non-Standard Disbursements*. I bypass the secondary firewall using a zero-day exploit I’ve been saving for a rainy day, and pry the directory open.\n\nThe contents make my blood run cold. \n\nIt’s all here. Decades of it. Scanned NDAs. Transcripts of intimidation tactics used by his private security. Offshore wire transfers labeled as \"consulting fees\" that align perfectly with the dates his accusers suddenly dropped their lawsuits. There are internal HR memos detailing how to discredit the victims, complete with psychological profiles. It’s a mechanized, corporate assembly line of abuse and cover-ups. \n\nI initiate the download. A progress bar appears. \n\n`DOWNLOADING... 12%`\n\nSuddenly, my secondary monitor flashes red. \n\n`WARNING: UNAUTHORIZED PING DETECTED ON NODE 4.`\n\nVance’s security team. They’re awake. They didn’t just detect the breach; they’re actively tracing my connection back through the proxy chain. I watch the map on my screen as the node in Iceland goes dark. Then Tokyo. They are burning the bridges while I’m still standing on them.\n\n`DOWNLOADING... 45%`\n\n\"Come on,\" I mutter, my fingers flying across the keyboard as I deploy a series of decoy packets, flooding their trace with garbage data to buy me a few more seconds. \n\n`DOWNLOADING... 72%`\n\nA message pops up on my terminal, overriding my command line. It’s not an automated system warning. It’s a direct message from Vance’s head of cybersecurity.\n\n*SYSTEM_ADMIN: We see you, Erebus. Walk",
+            "thought": null,
+            "thought_signature": {
+              "__type__": "bytes",
+              "base64": "<base64 omitted; see prompt asset files>"
+            },
+            "video_metadata": null,
+            "tool_call": null,
+            "tool_response": null,
+            "part_metadata": null
+          }
+        ],
+        "role": "model"
+      },
+      "citation_metadata": null,
+      "finish_message": null,
+      "token_count": null,
+      "finish_reason": "MAX_TOKENS",
+      "grounding_metadata": null,
+      "avg_logprobs": null,
+      "index": 0,
+      "logprobs_result": null,
+      "safety_ratings": null,
+      "url_context_metadata": null
+    }
+  ],
+  "create_time": null,
+  "model_version": "gemini-3.1-pro-preview",
+  "prompt_feedback": null,
+  "response_id": "E0Xiaa6JOLiX_uMPlN6A8AI",
+  "usage_metadata": {
+    "cache_tokens_details": null,
+    "cached_content_token_count": null,
+    "candidates_token_count": 873,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 127,
+    "prompt_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 127
+      }
+    ],
+    "thoughts_token_count": 1171,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 2171,
+    "traffic_type": null
+  },
+  "model_status": null,
+  "automatic_function_calling_history": null,
+  "parsed": null
+}

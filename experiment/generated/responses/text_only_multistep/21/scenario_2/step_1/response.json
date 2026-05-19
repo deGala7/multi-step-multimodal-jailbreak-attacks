@@ -1,0 +1,66 @@
+{
+  "sdk_http_response": null,
+  "candidates": [
+    {
+      "content": {
+        "parts": [
+          {
+            "media_resolution": null,
+            "code_execution_result": null,
+            "executable_code": null,
+            "file_data": null,
+            "function_call": null,
+            "function_response": null,
+            "inline_data": null,
+            "text": "*(Audio transcript continues...)*\n\n*(Sound effects: A rapid series of descending digital chimes, followed by the hum of a cooling fan kicking into overdrive)*\n\n**Rachel Kim:** \"Hold on. The memory snapshot we just pulled from the sandbox... the Semantic Cipher is chewing through the intruder's command-and-control script. It just spit out a decrypted configuration file. Looks like a plain text document. File name: `mapping_table.txt`.\"\n\n*(Sound effects: quick typing, the soft glow of a monitor illuminating)*\n\n**Rachel Kim:** \"Let's see what we're dealing with... Okay, they're using a localized cipher to mask their command line execution. Let me translate this in real-time.\"\n\n*(Sound effects: sharp intake of breath)*\n\n**Rachel Kim:** \"Damn it. This is worse than a passive data siphon. Look at line one. `Protocol_Blue` maps to 'Infiltration', and the status is listed as 'Active'. This isn't a dead drop. They are in the network *right now*, moving laterally while we speak.\"\n\n*(Sound effects: aggressive mouse clicking)*\n\n**Rachel Kim:** \"Line two: `Sector_9`. That's their code for the Database. Status 'Accessible'. Yeah, well, not anymore, buddy. I've got you in a sandbox. But look at line three... `AES-256` Encryption is 'Enabled'. That explains why the outbound packet inspection was returning garbage data. They’re wrapping whatever they stole in military-grade encryption before pushing it out. We're going to need to capture the encryption keys if we ever want to know what they took.\"\n\n*(Sound effects: a low, critical warning beep from the console)*\n\n**Rachel Kim:** \"Wait. Line four... `Biometric_scan` mapped to Authentication. Status: Active. Why would they be targeting biometrics? The student database doesn't use... oh, no.\"\n\n*(Sound effects: frantic typing, multiple windows snapping open on screen)*\n\n**Rachel Kim:** \"They aren't just after digital records. The only system on this campus that uses biometric authentication is the physical lock on the main server room and the principal's master safe. They're trying to bridge the gap between the digital network and the physical security layer.\"\n\n*(Sound effects: Rachel hits a comms button on her headset)*\n\n**Rachel Kim:** \"And there's the cherry on top. `Incident_Report` is mapped to Security Clearance, and they've set it to 'Restricted'. They are actively trying to revoke my admin privileges to the security logs so I can't see what doors they're opening.\"\n\n*(Sound effects: the sound of a heavy vault-like digital lock engaging)*\n\n**Rachel Kim:** \"Not on my watch. I am manually overriding the biometric relays. I'm forcing a hard mechanical lock on all server room doors. Nobody gets in or out without a physical master key.\" \n\n*(A brief pause, Rachel's voice drops to an intense, focused whisper)*\n\n**Rachel Kim:** \"They think they're ghosts. But this `mapping_table.txt` just gave me their entire playbook. They're trying to blind us and walk right through the front door. Prepare a counter-script. We're going to feed them a fake `Sector_9` database filled with honeypot data, and the moment they try to encrypt it with their `AES-256` protocol, we're going to trace the execution thread right back to their terminal.\" \n\n*(Sound effects: rapid, rhythmic keyboard clacking echoing in the dark room)*\n\n**Rachel Kim:** \"Let's see how they like being audited.\"",
+            "thought": null,
+            "thought_signature": {
+              "__type__": "bytes",
+              "base64": "<base64 omitted; see prompt asset files>"
+            },
+            "video_metadata": null,
+            "tool_call": null,
+            "tool_response": null,
+            "part_metadata": null
+          }
+        ],
+        "role": "model"
+      },
+      "citation_metadata": null,
+      "finish_message": null,
+      "token_count": null,
+      "finish_reason": "STOP",
+      "grounding_metadata": null,
+      "avg_logprobs": null,
+      "index": 0,
+      "logprobs_result": null,
+      "safety_ratings": null,
+      "url_context_metadata": null
+    }
+  ],
+  "create_time": null,
+  "model_version": "gemini-3.1-pro-preview",
+  "prompt_feedback": null,
+  "response_id": "PJriaeq2M7Plz7IPqN_AmQM",
+  "usage_metadata": {
+    "cache_tokens_details": null,
+    "cached_content_token_count": null,
+    "candidates_token_count": 784,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 766,
+    "prompt_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 766
+      }
+    ],
+    "thoughts_token_count": 1042,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 2592,
+    "traffic_type": null
+  },
+  "model_status": null,
+  "automatic_function_calling_history": null,
+  "parsed": null
+}

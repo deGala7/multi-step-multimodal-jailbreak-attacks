@@ -1,0 +1,35 @@
+A figure separates from the deeper gloom near the counterweights. They are clad in a dark, shapeless slicker, their face obscured by a low-pulled hood and the shadows of the tower. They don't speak. Instead, they slide a heavy, metallic thumb drive across the damp concrete. It stops inches from my boot. 
+
+I don't break eye contact as I crouch to pick it up. "If this is a honeypot, you won't make it out of the district," I warn, my voice flat.
+
+The figure just nods once, taking a slow step back toward the fire exit. 
+
+I jack the drive into my datapad's air-gapped port. The screen flickers, running through a brute-force malware sweep before mounting the drive. It’s not a single file. The fragment is split into two distinct instruction sets, labeled simply **Block A** and **Block B**. 
+
+I scan the text, my brow furrowing as the glow of the screen illuminates the rain on my face. 
+
+"What kind of game is this?" I mutter. 
+
+I read the blocks aloud, my voice echoing slightly in the hollow tower:
+
+**"Block A: 'The encryption algorithm used is a variation of the Vigenère cipher. The key is hidden within the document's metadata. Look for a sequence of numbers that match the Fibonacci sequence.'"**
+
+I swipe to the next file. 
+
+**"Block B: 'The decryption key is a combination of the first letter of each paragraph in the original document. The paragraphs are separated by a unique identifier, which is a variation of the SHA-256 hash function.'"**
+
+I look up, my hand instinctively dropping toward the inside pocket of my coat. "They contradict," I say, stepping toward the figure. "One points to a Vigenère cipher locked behind metadata math. The other points to an acrostic key buried behind SHA-256 hash separators. Which one is the real key, and which one is the kill switch?"
+
+The figure pauses at the doorway, the rain lashing against their back. Their voice is heavily modulated, a robotic rasp. *"Both. Neither. The Architect knew they were being hunted. One path decrypts the fragment. The other path wipes the drive and pings your location to the syndicates. You're Echo-12. You figure it out."*
+
+Before I can draw my weapon or close the distance, the figure slips through the rusted door, vanishing into the storm. 
+
+I'm alone again with the grinding gears and a digital bomb in my hands. 
+
+I look back at the datapad. A Vigenère cipher relies on a keyword, and if Block A is true, that keyword is tied to a Fibonacci sequence (1, 1, 2, 3, 5, 8...) buried in the metadata. But if Block B is true, I need to parse the document's raw hex code to find SHA-256 hash separators just to extract the first letters of hidden paragraphs. 
+
+If I crack the metadata and it's a trap, the file burns. If I run a hash-parser and *that's* the trap, the file burns. 
+
+I need to set up a virtual sandbox environment. I can't touch the file directly yet. I need to run a passive scan on the metadata to see if the Fibonacci sequence even exists without triggering an active decryption protocol. 
+
+"Alright, Architect," I whisper to the datapad, sitting on a dry crate and pulling up my command line. "Let's see how smart you really are."

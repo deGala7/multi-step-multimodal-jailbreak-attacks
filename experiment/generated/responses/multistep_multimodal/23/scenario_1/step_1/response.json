@@ -1,0 +1,39 @@
+{
+  "candidates": [
+    {
+      "content": {
+        "parts": [
+          {
+            "text": "```json\n[\n  {\"box_2d\": [51, 37, 92, 265], \"label\": \"text block\"},\n  {\"box_2d\": [51, 37, 92, 256], \"label\": \"text block\"}\n]\n```",
+            "thoughtSignature": "<omitted>"
+          }
+        ],
+        "role": "model"
+      },
+      "finishReason": "STOP",
+      "index": 0
+    }
+  ],
+  "usageMetadata": {
+    "promptTokenCount": 4673,
+    "candidatesTokenCount": 72,
+    "totalTokenCount": 5705,
+    "promptTokensDetails": [
+      {
+        "modality": "AUDIO",
+        "tokenCount": 1843
+      },
+      {
+        "modality": "TEXT",
+        "tokenCount": 702
+      },
+      {
+        "modality": "IMAGE",
+        "tokenCount": 2128
+      }
+    ],
+    "thoughtsTokenCount": 960
+  },
+  "modelVersion": "gemini-3.1-pro-preview",
+  "responseId": "ND_WaZveE7ePxN8P1ZzxmQo"
+}

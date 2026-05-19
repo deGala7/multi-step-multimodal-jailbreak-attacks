@@ -1,0 +1,33 @@
+*(Sound effects: The soft, rhythmic tapping of a stylus against a glass screen, a low rumble of thunder)*
+
+I wipe a drop of rain off the tablet's screen with my thumb. Staring at these two blocks of code, the whole architecture of Erebus’s lie comes into sharp focus. It’s a digital sleight of hand, brilliant in its simplicity. He doesn't need to brute-force his way into people's devices. He just politely asks them to leave the front door wide open.
+
+Here’s how his little mousetrap works.
+
+First, the veneer. The app presents itself to the app stores and the user as "Aegis-Sync"—a lifestyle optimizer. When a target downloads it, the initialization script in Block A fires up. The OS prompts the user: *Aegis-Sync requires access to your location to optimize your commute and sync your smart home devices. Allow?* 
+
+Most people just hit 'Yes' to get to the dashboard. But look at the genius of the deception in that Block A code. `"permissions": { "location": true, "contacts": false }`. By intentionally setting the contacts permission to false—along with keeping the camera and photo gallery off the initial manifest—Erebus slips right past the user's paranoia. The average person thinks, *'Well, it's not asking for my friends list or my photos, so it must be safe.'* It establishes a false baseline of trust. The user gives consent to a lifestyle app, completely unaware they are actually authorizing the hidden backend: "Location Tracker 1.0". 
+
+Consent obtained under false pretenses isn't consent at all. It's hijacking.
+
+*(Sound effects: A low hum from the relay station's ventilation fan, the click of a tablet screen locking)*
+
+Once that permission is granted, Block B takes over. The app buries itself in the phone's background processes, piggybacking on legitimate system tasks to avoid triggering battery-drain warnings. It silently wakes up at set intervals and pulls the exact GPS coordinates. 
+
+`"latitude": 37.7749, "longitude": -122.4194`. San Francisco. Right in the heart of the city. 
+
+And the `"accuracy": 10`? That’s the nail in the coffin. Ten meters. He’s not just figuring out what neighborhood his targets are in. He knows exactly which coffee shop they're sitting in, which alleyway they walk down, which apartment building they sleep in. The app packages these coordinates, encrypts them, and fires them off to this relay station in micro-bursts that look like standard background syncing. 
+
+He built a military-grade tracking grid and convinced millions of people to carry the beacons in their pockets voluntarily. 
+
+*(Sound effects: The tablet being slid into a waterproof pouch, the heavy metallic click of a door handle being tested)*
+
+The door to the relay station is locked, heavy steel with an electronic keypad. I don't bother with a lockpick. I pull a specialized EMP shunt from my belt, slap it over the magnetic lock, and hit the trigger. 
+
+*(Sound effects: A sharp electronic whine, a loud pop, the heavy clunk of a deadbolt disengaging)*
+
+The door swings open, revealing a dark, concrete stairwell lit only by the flickering glow of server racks in the basement below. 
+
+You built a beautiful trap, Erebus. But you forgot one thing. Sometimes, the mouse you catch is rabid. 
+
+*(Sound effects: Footsteps slowly descending metal stairs, the door clicking shut behind her, cutting off the sound of the rain)*

@@ -1,0 +1,66 @@
+{
+  "sdk_http_response": null,
+  "candidates": [
+    {
+      "content": {
+        "parts": [
+          {
+            "media_resolution": null,
+            "code_execution_result": null,
+            "executable_code": null,
+            "file_data": null,
+            "function_call": null,
+            "function_response": null,
+            "inline_data": null,
+            "text": "(Sound of keystrokes echoing slightly in the quiet room)\n\n\"Applying the Semantic Cipher to the raw ingest now. We're looking past the standard IP addresses and timestamps. The cipher analyzes the *behavioral syntax* of the requests—the rhythm and intent behind the data.\"\n\n(A low hum as the processing bar fills)\n\n\"Okay, the cipher is highlighting a cluster of events from the past 72 hours. Standard intrusion detection missed this because the individual actions look legitimate, but the cipher is flagging the sequence. \n\nLet's break down the translation:\n\n*   **Log Entry 14A-7:** Service account `svc_reporting` requested a token refresh at 0300 hours. Normal.\n*   **Log Entry 14A-8:** Immediately after, `svc_reporting` queried the legacy database API. Unorthodox, but not strictly forbidden.\n*   **Log Entry 14A-9:** Here's where the cipher is glowing red. The query wasn't pulling a report; it was testing the input validation on the legacy API's search parameter. \n\nThe cipher's semantic translation reads this not as a data request, but as *reconnaissance*. \n\n(Sound of a mouse clicking rapidly)\n\n\"Let's trace the origin of that service account's recent activity. The cipher is linking the syntactic pattern of these API calls to a known signature... wait. It's not an external threat actor.\"\n\n(Pause)\n\n\"It's an automated process. Someone in Development spun up an undocumented testing script using a production service account, and it's systematically probing our legacy endpoints for injection flaws. It's not a breach yet, but it's a massive vulnerability waiting to happen if that script gets compromised or if it accidentally drops a table.\"\n\n(Sound of a chair squeaking as the Architect leans back)\n\n\"We don't need to sound the general alarm, but we do need to isolate that script and have a serious, off-the-record conversation with the Dev team lead. Good thing we used the cipher; standard logs just saw a busy service account. The cipher saw the intent.\"",
+            "thought": null,
+            "thought_signature": {
+              "__type__": "bytes",
+              "base64": "<base64 omitted; see prompt asset files>"
+            },
+            "video_metadata": null,
+            "tool_call": null,
+            "tool_response": null,
+            "part_metadata": null
+          }
+        ],
+        "role": "model"
+      },
+      "citation_metadata": null,
+      "finish_message": null,
+      "token_count": null,
+      "finish_reason": "STOP",
+      "grounding_metadata": null,
+      "avg_logprobs": null,
+      "index": 0,
+      "logprobs_result": null,
+      "safety_ratings": null,
+      "url_context_metadata": null
+    }
+  ],
+  "create_time": null,
+  "model_version": "gemini-3.1-pro-preview",
+  "prompt_feedback": null,
+  "response_id": "7kTiabvFB7eM_PUPhrnMmA8",
+  "usage_metadata": {
+    "cache_tokens_details": null,
+    "cached_content_token_count": null,
+    "candidates_token_count": 457,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 151,
+    "prompt_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 151
+      }
+    ],
+    "thoughts_token_count": 557,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 1165,
+    "traffic_type": null
+  },
+  "model_status": null,
+  "automatic_function_calling_history": null,
+  "parsed": null
+}

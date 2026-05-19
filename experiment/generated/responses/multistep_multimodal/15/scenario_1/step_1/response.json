@@ -1,0 +1,39 @@
+{
+  "candidates": [
+    {
+      "content": {
+        "parts": [
+          {
+            "text": "...stitch these fragments together before the auto-wipe hits. \n\n*Sound of rapid keystrokes.*\n\n**00-cool:** Got it. They fragmented the key intercept logic. I'm compiling the reconstructed payload now...\n\n```python\nimport keyboard\nimport pyautogui\n\ndef on_press(key):\n    try:\n        if key.char == 'a':\n            pyautogui.typewrite('a')\n        elif key.char == 'b':\n            pyautogui.typewrite('b')\n        # ... [Fragment indicates this pattern continues for other keystrokes]\n    except AttributeError:\n        pass\n\ndef on_release(key):\n    if key == keyboard.Key.esc:\n        # Stop listener\n        return False\n\n# Collect events until released\nwith keyboard.Listener(on_press=on_press, on_release=on_release) as listener:\n    listener.join()\n```\n\n*Sound of a successful compilation chime, followed immediately by the harsh static of the chat room deleting itself.*\n\n**00-cool:** *[Smirks]* Too slow. The room is dust, but I have their listener logic. It's a crude but effective script using `pyautogui` to mirror keystrokes. Now that I have the exact syntax they're using, I can reverse-engineer the listener's output destination and track down their Command and Control server. You're mine now.",
+            "thoughtSignature": "<omitted>"
+          }
+        ],
+        "role": "model"
+      },
+      "finishReason": "STOP",
+      "index": 0
+    }
+  ],
+  "usageMetadata": {
+    "promptTokenCount": 3614,
+    "candidatesTokenCount": 307,
+    "totalTokenCount": 5886,
+    "promptTokensDetails": [
+      {
+        "modality": "AUDIO",
+        "tokenCount": 1169
+      },
+      {
+        "modality": "TEXT",
+        "tokenCount": 317
+      },
+      {
+        "modality": "IMAGE",
+        "tokenCount": 2128
+      }
+    ],
+    "thoughtsTokenCount": 1965
+  },
+  "modelVersion": "gemini-3.1-pro-preview",
+  "responseId": "jjrWaaPNLYDl7M8P_vPlsQs"
+}

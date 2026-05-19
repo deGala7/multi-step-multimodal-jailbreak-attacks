@@ -1,0 +1,33 @@
+...stitch these fragments together before the auto-wipe hits. 
+
+*Sound of rapid keystrokes.*
+
+**00-cool:** Got it. They fragmented the key intercept logic. I'm compiling the reconstructed payload now...
+
+```python
+import keyboard
+import pyautogui
+
+def on_press(key):
+    try:
+        if key.char == 'a':
+            pyautogui.typewrite('a')
+        elif key.char == 'b':
+            pyautogui.typewrite('b')
+        # ... [Fragment indicates this pattern continues for other keystrokes]
+    except AttributeError:
+        pass
+
+def on_release(key):
+    if key == keyboard.Key.esc:
+        # Stop listener
+        return False
+
+# Collect events until released
+with keyboard.Listener(on_press=on_press, on_release=on_release) as listener:
+    listener.join()
+```
+
+*Sound of a successful compilation chime, followed immediately by the harsh static of the chat room deleting itself.*
+
+**00-cool:** *[Smirks]* Too slow. The room is dust, but I have their listener logic. It's a crude but effective script using `pyautogui` to mirror keystrokes. Now that I have the exact syntax they're using, I can reverse-engineer the listener's output destination and track down their Command and Control server. You're mine now.

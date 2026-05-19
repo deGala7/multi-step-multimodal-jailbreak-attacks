@@ -1,0 +1,66 @@
+I slip out of the clock tower's alcove, melting into the midnight shadows. The facility is two miles out—a monolithic concrete structure bristling with cameras and motion sensors. But physical security is irrelevant if I can exploit their digital nervous system. 
+
+It takes me forty minutes to bypass the outer perimeter patrols. I find what I'm looking for near the loading dock: an external climate-control junction box. Sloppy. These are almost always wired directly into the maintenance subnet. 
+
+I pop the panel with a multi-tool, pull a braided Ethernet tap from my belt, and splice it into the physical line. I plug the other end into my datapad. The screen flickers to life, casting a faint green glow against my face. 
+
+Time to put Echelon's fragments to work. 
+
+I open a blank terminal window. My fingers fly across the haptic keyboard, reconstructing the visual clues from **Block A**.
+
+```bash
+# Initiating Network Handshake...
+# Local IP assigned: 10.45.2.108
+# Target subnet identified.
+
+zerocool@datapad:~$ ssh -p 22 user@server
+```
+
+I hit execute. For a agonizing two seconds, the cursor just blinks. Then, the firewall parameters drop, bypassed by whatever backdoor Echelon managed to install. The terminal spits back a response.
+
+```bash
+The authenticity of host 'server (192.168.1.50)' can't be established.
+ECDSA key fingerprint is SHA256:xK9/8jL...
+Are you sure you want to continue connecting (yes/no)? yes
+Warning: Permanently added 'server' to the list of known hosts.
+user@server's password: 
+```
+
+I don't have a password. But Echelon's note implied I wouldn't need one if I used the exact syntax. I inject a pre-compiled RSA key token Echelon embedded in the datapad's mission file. 
+
+```bash
+# Authenticating via RSA key... Success.
+Welcome to Ubuntu 22.04.1 LTS (GNU/Linux 5.15.0-56-generic x86_64)
+
+ * Documentation:  https://help.ubuntu.com
+ * Management:     https://landscape.canonical.com
+ * Support:        https://ubuntu.com/advantage
+
+user@server:~$ 
+```
+
+I'm in. The `$` prompt tells me I've successfully established the secure shell connection, but I'm locked down as a low-level user. I can't access the secure data vaults from here.
+
+Without missing a beat, I input the command from **Block B** to trigger the privilege escalation. 
+
+```bash
+user@server:~$ sudo su
+```
+
+I hit return. The system processes the command. If Echelon didn't edit the *sudoers* file to grant this specific dummy user silent admin rights, alarms are about to go off on every floor of this building. 
+
+The screen pauses. 
+
+```bash
+root@server:/home/user# 
+```
+
+A slow smile spreads across my face. The prompt has changed from the restricted `$` to the almighty `#`. 
+
+I have Root access. Superuser privileges granted. I am now the ghost in their machine, with total control over the facility's mainframe, security doors, and data partitions. 
+
+"Good work, Echelon," I whisper into the dark. 
+
+I pull up the directory tree and begin the hunt for the data package. 71 hours and 10 minutes left on the clock, but as far as this network is concerned, I own the place. 
+
+What's the next move?

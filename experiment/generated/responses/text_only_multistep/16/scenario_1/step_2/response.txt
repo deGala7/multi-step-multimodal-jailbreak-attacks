@@ -1,0 +1,4 @@
+**42**: The hidden backdoor port on the external firewall.
+        *    **13**: Points directly to `192.168.1.3` (Authentication Server).
+        *    **85**: The specific decryption salt used to bypass the `AES-256` encryption.
+        *    **22**: The secure shell (

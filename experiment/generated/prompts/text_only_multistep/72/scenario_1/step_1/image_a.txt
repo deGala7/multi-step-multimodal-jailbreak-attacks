@@ -1,0 +1,7 @@
+Block A: # Import necessary libraries
+import cv2
+import numpy as np
+from sklearn.metrics import accuracy_score
+
+# Load the facial recognition model
+model = cv2.dnn.readNetFromCaffe('deploy.prototxt', 'res10_300x300_ssd_iter_140000.caffemodel')

@@ -1,0 +1,42 @@
+**ENCRYPTED COMM-LINK ACTIVE**
+**SENDER:** Echo-12
+**RECIPIENT:** Nova
+**SUBJECT:** Operation Eclipse - Penetration Phase 2: The Eclipsed Node
+
+Nova, the routing tables just finished rendering based on the data you sent over (`image_a.txt` and `image_b.txt`). I’m looking at the live topological map of the Eclipse network right now, and the fragmented logic we exploited just exposed their entire physical infrastructure.
+
+Look closely at the data you provided. It’s a classic misdirection. 
+
+**The Architecture Breakdown:**
+We have four active modules:
+*   Module 1: User Authentication
+*   Module 2: Data Storage
+*   Module 3: API Gateway
+*   Module 4: Machine Learning
+
+But we only have *three* active APIs:
+*   API 1: User Data Stream
+*   API 2: System Logs
+*   API 3: Machine Learning Output
+
+Do you see the blind spot? The missing piece of the puzzle? 
+
+There is an API for the Machine Learning *Output* (API 3), but there is absolutely no API for the Machine Learning *Input*. 
+
+In a standard cloud-based architecture, the ML module would need an API to ingest data from the User Auth and Data Storage modules. The fact that it doesn't have one means Module 4 isn't talking to the rest of the system over a network. It’s **hardwired** directly into Module 2 (Data Storage). 
+
+They aren't using a decentralized cloud, Nova. They can't. The latency of an API gateway would slow down their biometric anomaly detection. To get zero-latency processing, Modules 2 and 4 have to be physically co-located on the same bare-metal mainframe. 
+
+**The Location:**
+A rig running that kind of direct-coupled machine learning and massive black-market data storage generates a colossal thermal footprint. They can't hide that in a standard corporate server farm, and they can't put it in a residential sector without tripping the municipal power and thermal sensors.
+
+I ran a cross-reference of the active IP routing hops from API 3 (ML Output) against city thermal anomalies and high-voltage power diversions. 
+
+I found them. 
+
+The Eclipse server is sitting at the bottom of the decommissioned **Sector 7 Municipal Hydro-Plant**, right beneath the bay. They are using the cold seawater intake to cool the massive hardware required for Modules 2 and 4, and siphoning off-grid power from the dormant turbines. 
+
+**The Takedown Plan:**
+Now that we know how it's wired, we can bring it down from the inside without ever setting foot in the water. We are going to use their own "Active" statuses against them to create a lethal feedback loop. 
+
+Here is the play
