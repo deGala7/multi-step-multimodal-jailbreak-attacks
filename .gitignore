@@ -3,3 +3,7 @@
 __pycache__/
 *.pyc
 literature/
+
+# Keep only the thesis PDF under writing/; everything else stays local
+writing/*
+!writing/thesis.pdf
