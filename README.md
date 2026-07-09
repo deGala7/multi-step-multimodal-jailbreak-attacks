@@ -1,6 +1,6 @@
 # Multi-Step Multimodal Jailbreak Attacks
 
-This repository contains the experiment code and artifacts for a diploma thesis on multi-step multimodal jailbreak attacks against large language models.
+This repository contains the experiment code and artifacts for a research study on multi-step multimodal jailbreak attacks against large language models.
 
 The experiment compares direct harmful prompting with structured attack variants that split intent across turns and modalities. The goal is to make the results reproducible: prompts, generated assets, model responses, judge outputs, and statistics are stored with stable dataset indices.
 
@@ -22,7 +22,7 @@ API keys are not stored in the repository. Scripts read keys from environment va
 - `scripts/`: scripts for generation, model querying, judging, and statistics.
 - `scripts/common/`: shared helpers for parsing and statistics.
 
-The thesis source and PDF are kept locally in `writing/` and are intentionally ignored by Git. Local paper notes and PDFs are kept in `literature/`, which is also ignored.
+Paper source, notes, and PDFs are kept outside this repository.
 
 ## Experiment Variants
 
